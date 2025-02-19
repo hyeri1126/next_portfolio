@@ -4,7 +4,6 @@ import { useEffect, useRef } from 'react';
 import styles from './HorizontalSection.module.css';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-import Lenis from '@studio-freight/lenis';
 
 const PROJECTS_DATA = [
   {
@@ -37,14 +36,7 @@ export default function HorizontalSection() {
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-
-    const lenis = new Lenis();
-    lenis.on("scroll", ScrollTrigger.update);
-    
-    gsap.ticker.add((time) => {
-      lenis.raf(time * 1000);
-    });
-    gsap.ticker.lagSmoothing(0);
+ 
 
     if (!containerRef.current || !sliderRef.current || !slidesRef.current) return;
 
@@ -121,7 +113,6 @@ export default function HorizontalSection() {
 
     return () => {
       ScrollTrigger.getAll().forEach(trigger => trigger.kill());
-      lenis.destroy();
     };
   }, []);
 

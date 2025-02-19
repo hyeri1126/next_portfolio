@@ -14,12 +14,12 @@ export default function IntroSection2({ onAnimationComplete }){
     useEffect(()=>{
 
       // 초기 설정
-      document.documentElement.style.overflow = 'hidden';
-      document.body.style.overflow = 'hidden';
+    //   document.documentElement.style.overflow = 'hidden';
+    //   document.body.style.overflow = 'hidden';
     
-      const preventDefault = (e) => e.preventDefault();
-      window.addEventListener('wheel', preventDefault, { passive: false });
-      window.addEventListener('touchmove', preventDefault, { passive: false });
+    //   const preventDefault = (e) => e.preventDefault();
+    //   window.addEventListener('wheel', preventDefault, { passive: false });
+    //   window.addEventListener('touchmove', preventDefault, { passive: false });
     
       gsap.registerPlugin(CustomEase);
       gsap.registerPlugin(ScrollTrigger);
@@ -78,10 +78,10 @@ export default function IntroSection2({ onAnimationComplete }){
                                 pin: true,
                                 pinSpacing: false
                               });
-                              document.documentElement.style.overflow = 'auto';
-                              document.body.style.overflow = 'auto';
-                              window.removeEventListener('wheel', preventDefault);
-                              window.removeEventListener('touchmove', preventDefault);
+                            //   document.documentElement.style.overflow = 'auto';
+                            //   document.body.style.overflow = 'auto';
+                            //   window.removeEventListener('wheel', preventDefault);
+                            //   window.removeEventListener('touchmove', preventDefault);
                               onAnimationComplete?.(); 
                             }, 500);
                           
