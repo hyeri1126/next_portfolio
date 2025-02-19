@@ -1,0 +1,91 @@
+@font-face {
+    font-family: "Big Shoulders Display";
+    src: url("/fonts/BigShouldersDisplay.ttf") format("woff2-variations");
+}
+
+.marquees {
+    width: 100vw;
+    height: 130vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    z-index: 2;
+    font-family: "Big Shoulders Display";
+    background-color: #ebebeb;
+    /* background-color: white; */
+    /* background-color: black; */
+    /* color: white; */
+    color: black;
+
+  }
+  
+  .marqueeContainer {
+    position: relative;
+    width: 125%;
+    height: 250px;
+    margin-bottom: 1em;
+    overflow: hidden;
+    display: flex;
+    gap: 1em;
+  }
+  
+  .marquee {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    gap: 1em;
+  }
+  
+  .marqueeContainer:global(#marquee-1) .marquee,
+  .marqueeContainer:global(#marquee-3) .marquee {
+    left: -15%;
+  }
+
+  .item {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .withText {
+    flex: 1.5;
+  }
+  
+  .item h1 {
+    font-size: 100px;
+    text-transform: uppercase;
+  }
+  
+  .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  @media (max-width: 900px) {
+    .marquees {
+      height: 100vh;
+    }
+  
+    .marqueeContainer {
+      width: 250%;
+      height: 150px;
+    }
+  
+    #marquee-2 .marquee,
+    #marquee-4 .marquee {
+      left: -35%;
+    }
+  
+    .item.withText {
+      flex: 1;
+    }
+  
+    .item h1 {
+      font-size: 60px;
+    }
+  }

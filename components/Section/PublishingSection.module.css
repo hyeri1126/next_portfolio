@@ -1,0 +1,67 @@
+.section{
+  position: relative;
+  background-color: #0f0f0f;
+  color: #505050;
+}
+
+.title{
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400;
+  /* margin: 60px 0; */
+  padding: 60px 0;
+}
+.wall {
+  max-width: 90%;
+  margin: 0 auto;
+  /* background-color: yellow; */
+  padding-left: 25px;
+}
+
+
+.wallItem{
+  width: 32%;
+  background-color: #1e1e1e;
+  padding: 12px;
+  transition: all 200ms;
+  margin-bottom: 12px;
+  border-radius: 8px;
+}
+
+.wallItem:hover {
+  transform: translateY(-6px);
+}
+
+.wallItem img {
+  width: 100%;
+  margin: 0 0 30px 0;
+}
+
+.wallItem h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.wallItem p {
+  text-align: center;
+  color: grey;
+  font-weight: 300;
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 1800px) {
+  .wallItem {
+    width: 47% /* 2열에 맞게 너비 조정 */
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .wallItem {
+    width: 90%;
+  }
+}

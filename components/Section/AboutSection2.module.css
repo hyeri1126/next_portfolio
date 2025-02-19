@@ -1,0 +1,69 @@
+@font-face {
+  font-family: 'S-CoreDream-3Light';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ChosunGu';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGu.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: '양진체';
+  src: url('https://fastly.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'KBO-Dia-Gothic_bold';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KBO-Dia-Gothic_bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Paperlogy-8ExtraBold';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+}
+
+.about {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #ebebeb;
+    /* background-color: black; */
+    /* background-color: white; */
+    /* font-family: '양진체'; */
+    font-family: 'KBO-Dia-Gothic_bold';
+    font-family: 'Paperlogy-8ExtraBold';
+    /* text-align: center; */
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .content {
+    font-size: 3rem;
+    line-height: 1.5;
+    font-weight: 6s00;
+    word-break: keep-all;
+  }
+  
+  .char {
+    display: inline-block;
+    -webkit-text-stroke: 0.8px rgb(0, 0, 0, 0.3); 
+    transition: color 0.8s ease;
+  }
+  
+  @media (max-width: 768px) {
+    .content {
+      font-size: 1.5rem;
+    }
+  }

@@ -1,0 +1,87 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: white;
+    position: relative;
+  }
+  
+  .title {
+    font-size: 22rem;
+    font-weight: 700;
+    letter-spacing: -1rem;
+  }
+  .textWrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .letterWrapper {
+    display: inline-block;
+    overflow: hidden; /* 글자가 넘치는 부분 숨기기 */
+    line-height: 1.2;
+  }
+  
+  .letter {
+    display: inline-block;
+    transition: all 500ms ease;
+  }
+  .fadeOut {
+    opacity: 0;
+    transform: translateY(50%);
+    transition: transform 500ms ease-out;
+  }
+
+  .customOShape {
+    display: inline-block;
+    width: 16rem;
+    height: 16rem;
+    position: relative;
+    background: black;
+    border-radius: 50% 50% 50% 0;
+  }
+  .scrollText {
+    position: absolute;
+    font-family:'Helvetica Neue';
+    bottom: 13rem;
+    font-size: 1rem;
+    text-align: center;
+    opacity: 0;
+}
+/* secondContainer */
+.secondContainer{
+    position: absolute;
+    box-sizing: border-box;
+    padding: 0 80px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+.welcomeWrapper{
+  font-size: 17em;
+  font-weight: 700;
+  letter-spacing: -2rem;
+  line-height: 1.2;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.myText{
+  font-style: italic;
+  color: transparent; 
+  letter-spacing: -1rem;
+  -webkit-text-stroke: 2px black; 
+}
+.welcomeText{
+  position: absolute;
+  bottom: 14rem;
+  left: 10rem;
+}

@@ -1,0 +1,214 @@
+@font-face {
+    font-family: "Big Shoulders Display";
+    src: url("/fonts/BigShouldersDisplay.ttf") format("woff2-variations");
+}
+
+.siteInner {
+    /* padding: 16px; */
+    background-color: #ebebeb;
+    /* background-color: black; */
+    font-family: "Big Shoulders Display";
+    padding: 0 20px 0 20px;
+
+}
+
+.siteTitle {
+    position: sticky;
+    top: 0px;
+    left: 16px;
+    width: 70%;
+    height: 5vw;
+    font-size: 4vw;
+    font-weight: 900;
+    line-height: 1.6;
+    text-transform: uppercase;
+    /* color: var(--black100); */
+    border-bottom: 0.4vw solid black;
+    margin-bottom: 10px;
+}
+
+.siteTitle em {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 2;
+  
+
+}
+
+.siteItem {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: sticky;
+    left: 0;
+    border-radius: 22px;
+}
+
+.s1 {
+    background-color: #BFC0C0;
+    /* background-image: url("https://i.pinimg.com/736x/87/3a/c2/873ac22c8524ea1c528d2d9b93759cf4.jpg");
+    background-image: url("https://i.pinimg.com/736x/47/9e/49/479e492fc4d45cc285fd30fb707afde0.jpg");
+    background-image: url("https://i.pinimg.com/736x/c3/c4/d2/c3c4d2485d949ae3d623de1dea566ddc.jpg");
+    background-image: url("https://i.pinimg.com/736x/74/94/d1/7494d11dc8405e5b71e12e7e34334601.jpg");
+    background-image: url("https://i.pinimg.com/736x/67/95/3b/67953b72be24862341d18ecb501d237a.jpg");
+    background-image: url("https://i.pinimg.com/736x/1c/88/13/1c8813e64f6d06a316b3678bfaf37a46.jpg");
+    background-image: url("https://i.pinimg.com/736x/2f/ea/e1/2feae1980b35962f5c1b52be854e0b68.jpg");
+    background-image: url("https://i.pinimg.com/736x/df/3d/a2/df3da2ff8b4b48127769a3837d817709.jpg");
+    background-image: url("https://i.pinimg.com/736x/70/dc/fd/70dcfdc4d91f8593575ff0fe06faeb2d.jpg");
+    background-image: url("https://i.pinimg.com/736x/85/3d/79/853d793b9cb9934aa1644f670a2c4e6f.jpg");
+    background-image: url("../../public/images/skill/background.jpg");
+    background-image: url("https://i.pinimg.com/736x/22/19/27/22192707aa725be0a60a5ab4ca2d28c4.jpg");
+    background-image: url("https://i.pinimg.com/736x/5d/69/dd/5d69ddc1c7f55136803b39856ab00f65.jpg");
+    background-image: url("https://i.pinimg.com/736x/5d/69/dd/5d69ddc1c7f55136803b39856ab00f65.jpg");
+    background-image: url("../../public/images/skill/s1.jpg"); */
+    background-size: cover;
+    /* background-repeat: repeat; */
+    top: 130px;
+}
+
+.s2 {
+    background-color:  #FC9657;
+    background-color: #FFD97D;
+    /* background-image: url("https://i.pinimg.com/736x/22/19/27/22192707aa725be0a60a5ab4ca2d28c4.jpg");
+    background-image: url("https://i.pinimg.com/736x/19/15/79/191579c0cdc3b64c242dd73fcbb6c9eb.jpg");
+    background-image: url("https://i.pinimg.com/736x/e6/00/17/e6001718fda9c056055c3d9085736e95.jpg");
+    background-image: url("../../public/images/skill/background.jpg");
+    background-image: url("https://i.pinimg.com/736x/73/cd/3b/73cd3bcb56e73c8de0d4bfa43f270ea3.jpg");
+    background-image: url("../../public/images/skill/s2.jpg"); */
+
+    /* background-repeat: repeat; */
+    background-size: cover;
+    top: 270px;
+}
+
+.s3 {
+    background-color:#A58CCE;
+    background-color: #4F5D75;
+    background-color: #D3E4CD;  
+    /* background-color: #F4D06F; */
+    /* background-image: url("https://i.pinimg.com/736x/19/c5/5b/19c55bd681194d6699c9d6d1f0c4e6e2.jpg");
+    background-image: url("https://i.pinimg.com/736x/af/fe/a1/affea1acabf013f2310a72b0a5cb1dc9.jpg");
+    background-image: url("https://i.pinimg.com/736x/16/85/23/16852386159e2eddafbbf49b895a199e.jpg");
+    background-image: url("../../public/images/skill/s3.jpg");
+    background-image: url("https://i.pinimg.com/736x/21/ca/83/21ca83f4cad8f4df1cf6611d848bd193.jpg");
+    background-image: url("../../public/images/skill/s3.jpg"); */
+    /* background-repeat: repeat; */
+    background-size: cover;
+    top: 410px;
+}
+
+.s4 {
+    background-color: #6AC1DB;
+    background-color: #EF8354 ;
+    /* background-color:  #FFABAB ; */
+    /* background-image: url("../../public/images/skill/s4.jpg"); */
+    /* background-repeat: repeat; */
+    background-size: cover;
+    overflow: hidden;
+}
+
+.num {
+    font-size: 3vw;
+    line-height: 1;
+    font-weight: 900;
+    position: absolute;
+    left: 1vw;
+    top: 1vw;
+}
+
+.text {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.text > div {
+    font-size: 3vw;
+    line-height: 1;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.title {
+    margin-bottom: 1rem;
+}
+
+.btn a {
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: var(--black200);
+    font-size: 1rem;
+    transition: all 0.3s;
+    margin: 0 2px;
+}
+
+.btn a:hover {
+    color: var(--black);
+}
+
+.info {
+    position: absolute;
+    left: 0;
+    bottom: 3%;
+    width: 98%;
+    margin-left: 1%;
+    border-top: 1px solid var(--black);
+    border-bottom: 1px solid var(--black);
+    display: flex;
+    justify-content: space-between;
+}
+
+.info span {
+    font-family: var(--mainKor-font);
+    font-size: 12px;
+    padding: 3px 0;
+    text-transform: uppercase;
+}
+
+@media (max-width: 800px) {
+    .siteTitle {
+        width: 100%;
+        margin-bottom: 10vw;
+        font-size: 30px;
+        height: auto;
+        top: 68px;
+        z-index: 1000;
+        background-color: var(--mainBg-color);
+    }
+
+    .s1 {
+        top: 140px;
+    }
+
+    .s2 {
+        top: 160px;
+    }
+
+    .s3 {
+        top: 180px;
+    }
+
+    .s4 {
+        top: 200px;
+    }
+
+    .num {
+        font-size: 80px;
+        left: 20px;
+        top: 20px;
+    }
+
+    .text > div {
+        font-size: 26px;
+    }
+
+    .info {
+        flex-direction: column;
+        width: 90%;
+        margin-left: 5%;
+        padding: 5px 0;
+    }
+}
