@@ -17,7 +17,7 @@ export default function Home() {
   
 
   return (
-    <LenisWrapper introComplete={introComplete}>
+    // <LenisWrapper introComplete={introComplete}>
       <div >
         <IntroSection2 onAnimationComplete={() => setIntroComplete(true)} />
         <MarqueeSection />
@@ -38,6 +38,6 @@ export default function Home() {
       
         )} */}
       </div>
-    </LenisWrapper>
+    // </LenisWrapper>
   );
 }

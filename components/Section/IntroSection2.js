@@ -83,6 +83,7 @@ export default function IntroSection2({ onAnimationComplete }){
                             //   window.removeEventListener('wheel', preventDefault);
                             //   window.removeEventListener('touchmove', preventDefault);
                               onAnimationComplete?.(); 
+                              console.log("animation completed")
                             }, 500);
                           
                           },  secondText.length * 180 )
