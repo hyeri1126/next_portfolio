@@ -86,8 +86,7 @@ export default function IntroSection2(){
                                 pinSpacing: false
                               });
                                 enableScroll();
-                            //   onAnimationComplete?.(); 
-                              console.log("animation completed")
+                                console.log("animation completed")
                             }, 500);
                           
                           },  secondText.length * 180 )

@@ -42,13 +42,15 @@ const PublishingSection = () => {
   return (
     <div className={styles.section}>
     
-      <div className={styles.title}>Responsive Grid Layout</div>
+      <div className={styles.title}>Web Publishing Projects</div>
+
+      <p className={styles.desc}>제가 그동안 작업한 퍼블리싱 작업물을 소개드립니다.  </p>
       
       <div className={styles.wall}>
         <div className={styles.wallItem}>
           <img src="/images/projects/project1_main2.png" alt="" />
           <h2>Lorem ipsum dolor</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..ㅎ.</p>
         </div>
 
         <div className={styles.wallItem}>

@@ -1,0 +1,78 @@
+.wrapperBox{
+  width: 100%;
+  background-color: black;
+}
+.wrapper{
+  width: 100%;
+  background-color: #004D43;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 50vh;
+  border-radius: 30px 30px 0 0;
+  font-family:'Helvetica Neue';
+  background-color: #2c2c2c; 
+}
+
+.wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  z-index: -1;
+}
+
+.textContainer{
+  width: 100%;
+  display: flex;
+  position: relative;
+  user-select:none;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.marqueeGroup{
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  white-space: nowrap;
+  width: 100%;
+  animation: scroll 20s linear infinite;
+}
+
+.marqueeGroup2{
+  animation: scroll2 20s linear infinite;
+}
+
+.marqueeGroup h1 {
+  font-size: 23rem;  /* text-8xl 정도의 크기 */
+  font-weight: 900;
+  color: white;
+  text-transform: uppercase;
+  padding: 0 2rem;
+  margin: 0.2rem 0;  /* 아주 작은 여백만 추가 */
+  line-height: 1;  /* 줄 높이를 최소화 */
+}
+
+@keyframes scroll {
+  from {
+      transform: translateX(0);
+  }
+  to {
+      transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll2 {
+  from {
+      transform: translateX(100%);
+  }
+  to {
+      transform: translateX(0);
+  }
+}

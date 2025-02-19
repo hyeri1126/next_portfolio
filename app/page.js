@@ -1,5 +1,6 @@
 'use client';
 import { useEffect, useState } from "react";
+import { useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import IntroSection2 from "@/components/Section/IntroSection2";
@@ -11,8 +12,11 @@ import ProjectIntroSection from "@/components/Section/ProjectIntroSection";
 import HorizontalSection2 from "@/components/Section/HorizontalSection2";
 import PublishingSection from "@/components/Section/PublishingSection";
 import LenisWrapper from "@/components/Animations/LenisWrapper";
+import MarqueeTextSection from "@/components/Section/MarqueeTextSection";
+import ContactSection from "@/components/Section/ContactSecion";
 
 export default function Home() {
+  const marqueeRef = useRef(null);
   useEffect(() => {
     if ("scrollRestoration" in window.history) {
       window.history.scrollRestoration = "manual";
@@ -24,9 +28,8 @@ export default function Home() {
       window.history.scrollRestoration = "auto"; // 기본 동작 복원
     };
   }, []);
-  
+
   return (
-    // <LenisWrapper introComplete={introComplete}>
       <div >
         <IntroSection2  />
         <MarqueeSection />
@@ -35,18 +38,8 @@ export default function Home() {
         <ProjectIntroSection />
         <HorizontalSection2 />
         <PublishingSection />
-        {/* {introComplete && (
-          <div style={{ position: 'relative' }}> 
-            <MarqueeSection />
-            <AboutSection />
-            <SkillSection />
-            <ProjectIntroSection />
-            <HorizontalSection2 />
-            <PublishingSection />
-          </div>
-      
-        )} */}
+        <MarqueeTextSection  ref={marqueeRef}/>
+        <ContactSection  marqueeRef={marqueeRef} />
       </div>
-    // </LenisWrapper>
   );
 }
