@@ -5,7 +5,7 @@ import gsap from "gsap";
 import { CustomEase } from "gsap/dist/CustomEase";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-export default function IntroSection2({ onAnimationComplete }){
+export default function IntroSection2(){
     const [step, setStep] = useState(0);
    
     const firstText = "Hyeri's";
@@ -13,14 +13,21 @@ export default function IntroSection2({ onAnimationComplete }){
 
     useEffect(()=>{
 
-      // 초기 설정
-    //   document.documentElement.style.overflow = 'hidden';
-    //   document.body.style.overflow = 'hidden';
-    
-    //   const preventDefault = (e) => e.preventDefault();
-    //   window.addEventListener('wheel', preventDefault, { passive: false });
-    //   window.addEventListener('touchmove', preventDefault, { passive: false });
-    
+      // 스크롤 비활성화
+      const disableScroll = () => {
+        document.body.style.overflow = "hidden";
+        document.body.style.touchAction = "none"; 
+      };
+  
+      // 스크롤 활성화
+      const enableScroll = () => {
+        document.body.style.overflow = "hidden";
+        document.body.style.overflowY = "auto";
+        document.body.style.touchAction = "auto";
+      };
+  
+      disableScroll();
+
       gsap.registerPlugin(CustomEase);
       gsap.registerPlugin(ScrollTrigger);
 
@@ -78,11 +85,8 @@ export default function IntroSection2({ onAnimationComplete }){
                                 pin: true,
                                 pinSpacing: false
                               });
-                            //   document.documentElement.style.overflow = 'auto';
-                            //   document.body.style.overflow = 'auto';
-                            //   window.removeEventListener('wheel', preventDefault);
-                            //   window.removeEventListener('touchmove', preventDefault);
-                              onAnimationComplete?.(); 
+                                enableScroll();
+                            //   onAnimationComplete?.(); 
                               console.log("animation completed")
                             }, 500);
                           

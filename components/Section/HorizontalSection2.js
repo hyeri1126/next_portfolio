@@ -25,11 +25,15 @@ export default function HorizontalSection2(){
       scrub: 1,
       pin: true,
       pinSpacing: true,
-      markers:true,
       onUpdate: (self) => {
         gsap.set(slidesContainerRef.current, {
           x: -self.progress * totalMove,
         });
+      },
+      snap: {
+        snapTo: 1 / (slidesContainerRef.current.children.length - 1), // 각 슬라이드에 맞춤
+        duration: 0.5, // 스냅 애니메이션 지속 시간 (초)
+        ease: "power1.inOut", // 스냅 애니메이션의 이징
       },
     });
 

@@ -13,13 +13,22 @@ import PublishingSection from "@/components/Section/PublishingSection";
 import LenisWrapper from "@/components/Animations/LenisWrapper";
 
 export default function Home() {
-  const [introComplete, setIntroComplete] = useState(false);
-  
+  useEffect(() => {
+    if ("scrollRestoration" in window.history) {
+      window.history.scrollRestoration = "manual";
+    }
 
+    window.scrollTo(0, 0);
+
+    return () => {
+      window.history.scrollRestoration = "auto"; // 기본 동작 복원
+    };
+  }, []);
+  
   return (
     // <LenisWrapper introComplete={introComplete}>
       <div >
-        <IntroSection2 onAnimationComplete={() => setIntroComplete(true)} />
+        <IntroSection2  />
         <MarqueeSection />
         <AboutSection />
         <SkillSection />
