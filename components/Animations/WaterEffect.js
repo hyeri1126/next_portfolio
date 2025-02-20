@@ -18,7 +18,7 @@ const simulationFragmentShader = `
   uniform int frame;
   varying vec2 vUv;
 
-  const float delta = 1.4;
+  const float delta = 0.8;
   
   void main() {
     vec2 uv = vUv;
@@ -49,14 +49,14 @@ const simulationFragmentShader = `
     
     pVel -= 0.005 * delta * pressure;
     
-    pVel *= 1.0 - 0.002 * delta;
+    pVel *= 1.0 - 0.005 * delta;
     pressure *= 0.999;
     
     vec2 mouseUV = mouse / resolution;
     if(mouse.x > 0.0) {
       float dist = distance(uv, mouseUV);
       if(dist <= 0.02) {
-        pressure += 2.0 * (1.0 - dist / 0.02);
+        pressure += 0.9 * (1.0 - dist / 0.02);
       }
     }
     
@@ -93,7 +93,7 @@ const renderFragmentShader = `
   }
 `;
 
-export function WaterEffect({ containerId }) {
+export function WaterEffect({ containerId, backgroundImage }) {
   const containerRef = useRef();
   
   useEffect(() => {
@@ -105,20 +105,21 @@ export function WaterEffect({ containerId }) {
     const camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1);
     
     const renderer = new THREE.WebGLRenderer({
-      antialias: true,
+      antialias: false,
       alpha: true,
       preserveDrawingBuffer: true,
+       powerPreference: "high-performance"
     });
     
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1));
     renderer.setSize(container.clientWidth, container.clientHeight);
     container.appendChild(renderer.domElement);
 
     const mouse = new THREE.Vector2();
     let frame = 0;
 
-    const width = container.clientWidth * window.devicePixelRatio;
-    const height = container.clientHeight * window.devicePixelRatio;
+    const width = container.clientWidth *0.5;
+    const height = container.clientHeight * 0.5;
     
     const options = {
       format: THREE.RGBAFormat,
@@ -144,10 +145,15 @@ export function WaterEffect({ containerId }) {
       fragmentShader: simulationFragmentShader,
     });
 
+    const textureLoader = new THREE.TextureLoader();
+    const backgroundTexture = textureLoader.load(backgroundImage);
+    backgroundTexture.minFilter = THREE.LinearFilter;
+    backgroundTexture.magFilter = THREE.LinearFilter;
+
     const renderMaterial = new THREE.ShaderMaterial({
       uniforms: {
         textureA: { value: null },
-        textureB: { value: null },
+        textureB: { value: backgroundTexture },
       },
       vertexShader: renderVertexShader,
       fragmentShader: renderFragmentShader,
@@ -161,26 +167,6 @@ export function WaterEffect({ containerId }) {
     simScene.add(simQuad);
     scene.add(renderQuad);
 
-    // Create background text texture
-    const canvas = document.createElement('canvas');
-    canvas.width = width;
-    canvas.height = height;
-    const ctx = canvas.getContext('2d', { alpha: true });
-
-    const textTexture = new THREE.CanvasTexture(canvas);
-    textTexture.minFilter = THREE.LinearFilter;
-    textTexture.magFilter = THREE.LinearFilter;
-    textTexture.format = THREE.RGBAFormat;
-
-    const updateBackgroundText = () => {
-      const container = document.getElementById(containerId);
-      if (!container) return;
-      
-      ctx.clearRect(0, 0, width, height);
-      ctx.fillStyle = '#fb7427';
-      ctx.fillRect(0, 0, width, height);
-      textTexture.needsUpdate = true;
-    };
 
     const handleResize = () => {
       const container = document.getElementById(containerId);
@@ -193,16 +179,13 @@ export function WaterEffect({ containerId }) {
       rtA.setSize(newWidth, newHeight);
       rtB.setSize(newWidth, newHeight);
       simMaterial.uniforms.resolution.value.set(newWidth, newHeight);
-
-      canvas.width = newWidth;
-      canvas.height = newHeight;
-      updateBackgroundText();
+    
     };
 
     const handleMouseMove = (e) => {
       const rect = container.getBoundingClientRect();
-      mouse.x = (e.clientX - rect.left) * window.devicePixelRatio;
-      mouse.y = (container.clientHeight - (e.clientY - rect.top)) * window.devicePixelRatio;
+      mouse.x = (e.clientX - rect.left) * 0.5;
+      mouse.y = (container.clientHeight - (e.clientY - rect.top)) * 0.5;
     };
 
     const handleMouseLeave = () => {
@@ -220,7 +203,7 @@ export function WaterEffect({ containerId }) {
       renderer.render(simScene, camera);
 
       renderMaterial.uniforms.textureA.value = rtB.texture;
-      renderMaterial.uniforms.textureB.value = textTexture;
+      renderMaterial.uniforms.textureB.value = backgroundTexture;
       renderer.setRenderTarget(null);
       renderer.render(scene, camera);
 
@@ -235,7 +218,6 @@ export function WaterEffect({ containerId }) {
     container.addEventListener('mouseleave', handleMouseLeave);
     window.addEventListener('resize', handleResize);
 
-    updateBackgroundText();
     animate();
 
     return () => {
@@ -246,12 +228,12 @@ export function WaterEffect({ containerId }) {
       renderer.dispose();
       rtA.dispose();
       rtB.dispose();
-      textTexture.dispose();
       simMaterial.dispose();
       renderMaterial.dispose();
       plane.dispose();
+      backgroundTexture.dispose(); 
     };
-  }, [containerId]);
+  }, [containerId, backgroundImage]);
 
   return null;
 }

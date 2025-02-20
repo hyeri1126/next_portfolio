@@ -43,7 +43,8 @@ export default function IntroSection2(){
         const t1 = gsap.timeline();
 
           t1.to(`.${styles.hero}`,{
-              clipPath: "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)",
+            //   clipPath: "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)",
+              clipPath: "inset(0% round 5px)",
               duration: 2,
               ease: "hop",
           })
@@ -115,13 +116,79 @@ export default function IntroSection2(){
     return(
         <div className={`${styles.container} introSection`}>
             <section className={styles.hero}>
-                <div className={styles.overlay}>
-                 
+
+                <div id="water-effect-container" className={styles.waterEffectContainer}>
+                    <WaterEffect 
+                        containerId="water-effect-container" 
+                        backgroundImage="/images/black2.jpg"  
+                    />
+                    <h1 className={styles.title}>
+                        <div className={styles.textWrapper}>
+                        {firstText.split('').map((char, index) => (
+                            <span key={`first-${index}`} className={styles.letterWrapper}>
+                                <span
+                                    className={styles.letter}
+                                    style={{
+                                        transitionDelay: `${index * 160}ms`,
+                                        transform: step >= 1 ? 
+                                            (step === 1 ? 'translateY(0)' : 'translateY(50%)') : 
+                                            'translateY(200%)',
+                                        opacity: step === 1 ? 1 : 0
+                                    }}
+                                >
+                                    {char}
+                                </span>
+                            </span>
+                        ))}
+                        </div>
+
+                        <div className={styles.textWrapper}>
+                            {secondText.map((char, index) => (
+                                <span key={`second-${index}`} className={styles.letterWrapper}>
+                                    {char === ' ' ? (
+                                    <span 
+                                            style={{
+                                                display: 'inline-block',
+                                                transitionDelay: `${index * 150}ms`,
+                                                opacity: step >= 2 ? 1 : 0,
+                                            }}
+                                        >
+                                            <span 
+                                                className={styles.customOShape}
+                                                style={{
+                                                    transform: step >= 2 ? 'scale(1)' : 'scale(0)',
+                                                    transformOrigin: 'bottom left',
+                                                    transition: 'transform 2000ms'
+                                                }}
+                                            />
+                                        </span>
+                                    ) : (
+                                        <span
+                                            className={styles.letter}
+                                            style={{
+                                                transitionDelay: `${index * 180}ms`,
+                                                transform: step >= 2 ? 'translateY(0)' : 'translateY(50%)',
+                                                opacity: step >= 2 ? 1 : 0
+                                            }}
+                                        >
+                                            {char}
+                                        </span>
+                                    )}
+                                </span>
+                            ))}
+                        </div>
+
+                    </h1>
+
                 </div>
 
-                {/* <div id="water-effect-container" className={styles.waterEffectContainer}>
-                    <WaterEffect containerId="water-effect-container" />
-                </div> */}
+              
+                <div className={styles.overlay}></div>
+
+           
+           
+
+              
 
                 <nav className={styles.nav}>
                   <div 
@@ -146,8 +213,8 @@ export default function IntroSection2(){
                     </div>
                 </nav>
 
-                <h1 className={styles.title}>
-                    {/* Hyeri's 애니메이션 */}
+     
+                {/* <h1 className={styles.title}>
                     <div className={styles.textWrapper}>
                     {firstText.split('').map((char, index) => (
                         <span key={`first-${index}`} className={styles.letterWrapper}>
@@ -167,7 +234,6 @@ export default function IntroSection2(){
                     ))}
                     </div>
 
-                    {/* STORIES 애니메이션 */}
                     <div className={styles.textWrapper}>
                         {secondText.map((char, index) => (
                             <span key={`second-${index}`} className={styles.letterWrapper}>
@@ -204,16 +270,8 @@ export default function IntroSection2(){
                         ))}
                     </div>
 
-                </h1>
+                </h1> */}
 
-                {/* <div className={styles.heroImgBox}>
-                    <Image
-                        src="/images/liquid.jpg"
-                        fill
-                        alt="kitty"
-                        className={styles.heroImg}
-                    />
-                </div> */}
 
             </section>
         </div>
