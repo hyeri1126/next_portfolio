@@ -89,11 +89,11 @@ export default function ContactSection({ marqueeRef }){
     window.addEventListener("mousemove", onMouseMove);
 
     gsap.to(sectionRef.current, {
-      y: -200, // 살짝 위로 이동
+      y: -300, // 살짝 위로 이동
       scrollTrigger: {
         trigger: sectionRef.current, // MarqueeSection 기준
         start: "top 80%", 
-        end: "30% 60%", 
+        end: "70% 60%", 
         markers: true, 
         scrub:true,
       },

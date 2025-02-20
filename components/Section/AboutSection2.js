@@ -33,7 +33,7 @@ export default function AboutSection() {
     gsap.fromTo(
       chars,
       {
-        color: "rgba(255,255, 255, 0.5)",
+        color: "rgba(255,255, 255, 0.3)",
    
       },
       {

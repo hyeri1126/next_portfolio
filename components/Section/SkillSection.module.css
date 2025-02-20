@@ -6,6 +6,8 @@
 .siteInner {
     /* padding: 16px; */
     background-color: #ebebeb;
+    background-color: #f1f1f1;
+
     /* background-color: black; */
     font-family: "Big Shoulders Display";
     padding: 0 20px 30px 20px;
@@ -87,6 +89,7 @@
     background-color:#A58CCE;
     background-color: #4F5D75;
     background-color: #D3E4CD;  
+
     /* background-color: #F4D06F; */
     /* background-image: url("https://i.pinimg.com/736x/19/c5/5b/19c55bd681194d6699c9d6d1f0c4e6e2.jpg");
     background-image: url("https://i.pinimg.com/736x/af/fe/a1/affea1acabf013f2310a72b0a5cb1dc9.jpg");
@@ -102,6 +105,7 @@
 .s4 {
     background-color: #6AC1DB;
     background-color: #EF8354 ;
+    /* background-color: #C77372; */
     /* background-color:  #FFABAB ; */
     /* background-image: url("../../public/images/skill/s4.jpg"); */
     /* background-repeat: repeat; */

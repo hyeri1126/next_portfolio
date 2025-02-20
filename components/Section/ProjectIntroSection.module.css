@@ -32,7 +32,8 @@
 .divider {
   width: 1.5px;
   height: 30%;
-  background-color: #05364c;
+  /* background-color: #05364c; */
+  background-color: white;
 }
 
 .intro_header {

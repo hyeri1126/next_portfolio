@@ -4,6 +4,7 @@ import styles from "./IntroSection2.module.css";
 import gsap from "gsap";
 import { CustomEase } from "gsap/dist/CustomEase";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { WaterEffect } from "../Animations/WaterEffect";
 
 export default function IntroSection2(){
     const [step, setStep] = useState(0);
@@ -114,7 +115,13 @@ export default function IntroSection2(){
     return(
         <div className={`${styles.container} introSection`}>
             <section className={styles.hero}>
-                <div className={styles.overlay}></div>
+                <div className={styles.overlay}>
+                 
+                </div>
+
+                {/* <div id="water-effect-container" className={styles.waterEffectContainer}>
+                    <WaterEffect containerId="water-effect-container" />
+                </div> */}
 
                 <nav className={styles.nav}>
                   <div 
