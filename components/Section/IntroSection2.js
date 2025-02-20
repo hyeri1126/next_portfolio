@@ -89,9 +89,9 @@ export default function IntroSection2(){
                               });
                                 enableScroll();
                                 console.log("animation completed")
-                            }, 500);
+                            }, 1200);
                           
-                          },  secondText.length * 180 )
+                          },  secondText.length * 180 + 500)
                       
                         }, hyeriAnimationDuration ) ;
                   }, 680);
@@ -195,7 +195,7 @@ export default function IntroSection2(){
                     style={{
                         transform: step >= 3 ? 'translateY(0)' : 'translateY(200%)',
                         opacity: step >= 3 ? 1 : 0,
-                        transition: 'transform 0.8s ease, opacity 0.8s ease',
+                        transition: 'all 1s ease',
                         transitionDelay: '0.2s'
                     }}
                     >
@@ -205,8 +205,8 @@ export default function IntroSection2(){
                       style={{
                           transform: step >= 3 ? 'translateY(0)' : 'translateY(200%)',
                           opacity: step >= 3 ? 1 : 0,
-                          transition: 'transform 0.8s ease, opacity 0.8s ease',
-                          transitionDelay: '0.5s'
+                          transition: 'all 1s ease',
+                          transitionDelay: '0.8s'
                       }}
                     >
                         PROJECTS
