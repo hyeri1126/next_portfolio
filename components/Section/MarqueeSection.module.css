@@ -4,8 +4,8 @@
 }
 
 .marquees {
-    width: 100vw;
-    height: 130vh;
+    width: 100%;
+    height: 120vh;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -13,19 +13,19 @@
     background-color: #fff;
     z-index: 2;
     font-family: "Big Shoulders Display";
-    background-color: #ebebeb;
+    /* background-color: #ebebeb; */
     background-color: #f1f1f1;
     /* background-color: white; */
     /* background-color: black; */
     /* color: white; */
     color: black;
-
+    border-radius: 80px 80px 0 0;
   }
   
   .marqueeContainer {
     position: relative;
     width: 125%;
-    height: 250px;
+    height: clamp(150px, 25vh, 250px);
     margin-bottom: 1em;
     overflow: hidden;
     display: flex;
@@ -57,36 +57,63 @@
   }
   
   .item h1 {
-    font-size: 100px;
+    font-size: clamp(40px, 8vw, 100px); 
     text-transform: uppercase;
+    white-space: nowrap;
   }
   
   .item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: clamp(4px, 1vw, 8px);
   }
-  
-  @media (max-width: 900px) {
-    .marquees {
-      height: 100vh;
-    }
-  
-    .marqueeContainer {
-      width: 250%;
-      height: 150px;
-    }
-  
-    #marquee-2 .marquee,
-    #marquee-4 .marquee {
-      left: -35%;
-    }
-  
-    .item.withText {
-      flex: 1;
-    }
-  
+
+  @media (max-width: 1200px) {
     .item h1 {
-      font-size: 60px;
+      font-size: 100px;
     }
   }
+
+  @media (max-width: 1199px) and (min-width: 768px) {
+    .marqueeContainer {
+        height: 200px;
+    }
+    
+    .item h1 {
+        font-size: 80px;
+    }
+ }
+
+ @media (max-width: 767px) {
+  .marquees{
+    height:100vh;
+  }
+
+  .marqueeContainer {
+      height: 150px;
+      margin-bottom: 0.5em;
+  }
+
+
+  .item.withText {
+      flex: 1;
+  }
+
+  .item h1 {
+      font-size: clamp(30px, 6vw, 50px);
+  }
+}
+  
+@media (max-height: 600px) {
+  .marquees{
+    height: 80vh;
+  }
+  .marqueeContainer {
+      height: 120px;
+  }
+
+  .item h1 {
+      font-size: clamp(25px, 5vw, 40px);
+  }
+}

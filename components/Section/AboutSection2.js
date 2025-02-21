@@ -50,6 +50,16 @@ export default function AboutSection() {
       }
     );
 
+    gsap.to(`.${styles.parallaxBackground}`, {
+      y: "-20%", /* 배경이 위로 느리게 이동 */
+      scrollTrigger: {
+        trigger: section,
+        start: "top top",
+        end: "bottom",
+        scrub: true,
+      },
+    });
+
     return () => {
       // 클린업
       text.revert();
@@ -58,6 +68,7 @@ export default function AboutSection() {
 
   return (
     <section className={styles.about}>
+      <div className={styles.parallaxBackground}></div>
       <div className={styles.container}>
         <div className={styles.content}>
 

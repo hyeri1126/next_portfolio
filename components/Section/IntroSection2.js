@@ -49,13 +49,6 @@ export default function IntroSection2(){
               ease: "hop",
           })
 
-          .to(`.${styles.hero}`, {
-              transform: "translate(-50%, -50%) scale(1)",
-              duration: 2.25,
-              ease: "power3.inOut",
-          }, "-=2")
-
-
 
           .to(`.${styles.overlay}`, {
               clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
