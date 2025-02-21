@@ -13,32 +13,43 @@ export default function HorizontalSection2(){
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    // if (!stickyRef.current || !slidesContainerRef.current || !sliderRef.current) return;
+    const createScrollTrigger = () => {
+      const totalMove = slidesContainerRef.current.offsetWidth - sliderRef.current.offsetWidth;
+  
+      ScrollTrigger.create({
+        id: 'horizontal-section', 
+        trigger: stickyRef.current,
+        start: "top top",
+        end: `+=${window.innerHeight * 5}px`,
+        scrub: 1,
+        pin: true,
+        pinSpacing: true,
+        onUpdate: (self) => {
+          gsap.set(slidesContainerRef.current, {
+            x: -self.progress * totalMove,
+          });
+        },
+        snap: {
+          snapTo: 1 / (slidesContainerRef.current.children.length - 1),
+          duration: 0.5,
+          ease: "power1.inOut",
+        },
+      });
+    };
 
-    const totalMove = slidesContainerRef.current.offsetWidth - sliderRef.current.offsetWidth;
+    createScrollTrigger();
 
-    // ScrollTrigger 설정
-    ScrollTrigger.create({
-      trigger: stickyRef.current,
-      start: "top top",
-      end: `+=${window.innerHeight * 5}px`,
-      scrub: 1,
-      pin: true,
-      pinSpacing: true,
-      onUpdate: (self) => {
-        gsap.set(slidesContainerRef.current, {
-          x: -self.progress * totalMove,
-        });
-      },
-      snap: {
-        snapTo: 1 / (slidesContainerRef.current.children.length - 1), // 각 슬라이드에 맞춤
-        duration: 0.5, // 스냅 애니메이션 지속 시간 (초)
-        ease: "power1.inOut", // 스냅 애니메이션의 이징
-      },
-    });
+    window.addEventListener('resize', () => {
+      console.log("resize");
+      const trigger = ScrollTrigger.getById('horizontal-section');
+      if (trigger) trigger.kill();
+
+      createScrollTrigger();
+    })
 
     return () => {
-      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+      const trigger = ScrollTrigger.getById('horizontal-section');
+      if (trigger) trigger.kill();
     };
   }, []);
 
