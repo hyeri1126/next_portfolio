@@ -16,7 +16,7 @@ import MarqueeTextSection from "@/components/Section/MarqueeTextSection";
 import ContactSection from "@/components/Section/ContactSecion";
 
 export default function Home() {
-  // const marqueeRef = useRef(null);
+  const marqueeRef = useRef(null);
 
   useEffect(() => {
     if ("scrollRestoration" in window.history) {
@@ -45,8 +45,8 @@ export default function Home() {
         <div className="section-container" style={{backgroundColor: "black"}}>
           <PublishingSection />
         </div>
-        {/* <MarqueeTextSection  ref={marqueeRef}/> */}
-        {/* <ContactSection  marqueeRef={marqueeRef} /> */}
+        <MarqueeTextSection  ref={marqueeRef}/>
+        <ContactSection  marqueeRef={marqueeRef} />
       </div>
   );
 }

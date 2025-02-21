@@ -82,7 +82,9 @@
 .logoTitle{
     
     /* font-family: 'SangSangRock'; */
-    font-family: 'KOTRAHOPE';
+    /* font-family: 'KOTRAHOPE'; */
+    /* font-family: 'EarlyFontDiary'; */
+    font-family:'Helvetica Neue';
     font-family: 'EarlyFontDiary';
 
 
@@ -155,14 +157,16 @@
 .title {
     position: relative;
     /* font-size: 22rem; */
-    font-weight: 700;
+    font-weight: 500;
     letter-spacing: -1rem;
     z-index:5;  /* z-index 증가 */
     color: white;
     /* mix-blend-mode: overlay; */
     font-size: clamp(5rem, 15vw, 22rem); 
     letter-spacing: clamp(-0.5rem, -1vw, -1rem);
-    font-family: 'KOTRAHOPE';
+    /* font-family: 'KOTRAHOPE'; */
+    font-family:'Helvetica Neue';
+
 }
 .textWrapper {
     position: absolute;

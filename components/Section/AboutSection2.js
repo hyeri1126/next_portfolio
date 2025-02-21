@@ -37,7 +37,7 @@ export default function AboutSection() {
    
       },
       {
-        color: "rgb(0,0,0)",
+        color: "rgb(255,255,255)",
         duration: 1,
         stagger: 1, // 글자별 시차
         scrollTrigger: {
