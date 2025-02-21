@@ -315,15 +315,15 @@
         margin-bottom: 10px;
     }
     .s1 {
-        top: 70px;
+        top: 75px;
     }
 
     .s2 {
-        top: 150px;
+        top: 155px;
     }
 
     .s3 {
-        top: 230px;
+        top: 235px;
     }
     .num{
         font-size: 6vw;
@@ -331,5 +331,19 @@
     .imgBox2{
         width: 310px;
         height: 130px;
+    }
+}
+
+@media (min-width: 680px) and (max-width: 900px) {
+    .s1 {
+        top: 95px;
+    }
+
+    .s2 {
+        top: 175px;
+    }
+
+    .s3 {
+        top: 255px;
     }
 }

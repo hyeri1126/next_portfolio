@@ -33,7 +33,7 @@ export default function AboutSection() {
     gsap.fromTo(
       chars,
       {
-        color: "rgba(255,255, 255, 0.3)",
+        color: "rgba(255,255, 255, 0.2)",
    
       },
       {
@@ -71,11 +71,19 @@ export default function AboutSection() {
       <div className={styles.parallaxBackground}></div>
       <div className={styles.container}>
         <div className={styles.content}>
+          <div>
+          
+            아이디어를 현실로 구현할 수 있다는 매력에 이끌려 프론트엔드 개발자가 되었습니다. 
+            사용자들에게 다양한 애니메이션과 인터랙션 기능을 통해 독창적이고 즐거운, 
+            한 번 경험하면 잊을 수 없는 웹 경험을 제공하는 것이 개발자로서 제 꿈입니다.
+          </div>
 
-          저는 사용자가 새롭고 다채로운 웹 세상에 깊이 몰입할 수 있도록
-          웹 세계를 설계하는 프론트엔드 개발자입니다.  <br />
-          한 번도 느껴보지 못한 재미있고 편리한 웹 경험을 선물하는 것이 저의 궁극적인 목표입니다. 
-          항상 성장하고 노력하며, 더 나은 웹 세상을 만들어가겠습니다.
+          <div className={styles.highlight}>
+            <div className={styles.desc}>항상 "Yes, I can!"을 외치며 도전하겠습니다.</div>
+            <div className={styles.desc}>끊임없는 배우고 성장해 시대에 뒤쳐지지 않겠습니다.</div>
+            <div className={styles.desc}>어디서든 신뢰받고 도움이 되는 인재로 자리매김하겠습니다.</div>
+          </div>
+      
         </div>
       </div>
     </section>
