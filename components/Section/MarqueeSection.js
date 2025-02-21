@@ -7,22 +7,22 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 import SplitType from 'split-type';
 
 const images = {
-    img1: '/images/marquee/img1.jpg',
-    img2: '/images/marquee/img2.jpg',
-    img3: '/images/marquee/img3.jpg',
-    img4: '/images/marquee/img4.jpg',
-    img5: '/images/marquee/img5.jpg',
-    img6: '/images/marquee/img6.jpg',
-    img7: '/images/marquee/img7.jpg',
-    img8: '/images/marquee/img8.jpg',
-    img9: '/images/marquee/img9.jpg',
-    img10: '/images/marquee/img10.jpg',
-    img11: '/images/marquee/img11.jpg',
-    img12: '/images/marquee/img12.jpg',
-    img13: '/images/marquee/img13.jpg',
-    img14: '/images/marquee/img14.jpg',
-    img15: '/images/marquee/img15.jpg',
-    img16: '/images/marquee/img16.jpg',
+    img1: '/images/kitty1.jpg',
+    img2: '/images/kitty2.jpg',
+    img3: '/images/study6.jpg',
+    img4: '/images/study3.jpg',
+    img5: '/images/kitty7.jpg',
+    img6: '/images/ican.jpg',
+    img7: '/images/laptop2.jpg',
+    img8: '/images/study2.jpg',
+    img9: '/images/laptop5.jpg',
+    img10: '/images/book.jpg',
+    img11: '/images/study.jpg',
+    img12: '/images/kitty5.jpg',
+    img13: '/images/kitty3.jpg',
+    img14: '/images/ok.jpg',
+    img15: '/images/study5.jpg',
+    img16: '/images/kitty10.jpg',
   };
 
 export default function MarqueeSection() {

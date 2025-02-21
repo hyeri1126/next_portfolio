@@ -1,3 +1,21 @@
+@font-face {
+    font-family: 'SangSangRock';
+    src: url('https://gcore.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/SangSangRockOTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KOTRAHOPE';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/KOTRAHOPE.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'EarlyFontDiary';
+    src: url('https://gcore.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EarlyFontDiary.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 .loadingScreen {
     position: fixed;
     top: 0;
@@ -61,11 +79,30 @@
     background-color:#ebebeb ;
 }
 
+.logoTitle{
+    
+    /* font-family: 'SangSangRock'; */
+    font-family: 'KOTRAHOPE';
+    font-family: 'EarlyFontDiary';
 
+
+    position: absolute;
+    font-size: 24px;
+    top: 0;
+    left: 0;
+    padding: 2rem;
+    font-weight: bold;
+    z-index: 2;
+    color: white;
+    /* font-size: 15px; */
+    user-select: none;
+}
 .nav{
+    font-family: 'EarlyFontDiary';
+    font-size: 20px;
     position: absolute;
     top: 0;
-    right: 0;
+    right: 10px;
     display: flex;
     padding: 2rem;
     gap: 2rem;
@@ -125,6 +162,7 @@
     /* mix-blend-mode: overlay; */
     font-size: clamp(5rem, 15vw, 22rem); 
     letter-spacing: clamp(-0.5rem, -1vw, -1rem);
+    font-family: 'KOTRAHOPE';
 }
 .textWrapper {
     position: absolute;

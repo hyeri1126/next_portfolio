@@ -178,19 +178,32 @@ export default function IntroSection2(){
               
                 <div className={styles.overlay}></div>
 
+
+                <div
+                 style={{
+                    transform: step >= 3 ? 'translateY(0)' : 'translateY(200%)',
+                    opacity: step >= 3 ? 1 : 0,
+                    transition: 'all 1s ease',
+                    transitionDelay: '0.2s'
+                }}
+                 className={styles.logoTitle}
+                >
+                  Hyeri's Porfolio
+                </div>
+
            
            
 
               
 
                 <nav className={styles.nav}>
-                  <div 
-                    style={{
-                        transform: step >= 3 ? 'translateY(0)' : 'translateY(200%)',
-                        opacity: step >= 3 ? 1 : 0,
-                        transition: 'all 1s ease',
-                        transitionDelay: '0.2s'
-                    }}
+                    <div 
+                      style={{
+                          transform: step >= 3 ? 'translateY(0)' : 'translateY(200%)',
+                          opacity: step >= 3 ? 1 : 0,
+                          transition: 'all 1s ease',
+                          transitionDelay: '0.2s'
+                      }}
                     >
                         ABOUT,
                     </div>
@@ -199,7 +212,7 @@ export default function IntroSection2(){
                           transform: step >= 3 ? 'translateY(0)' : 'translateY(200%)',
                           opacity: step >= 3 ? 1 : 0,
                           transition: 'all 1s ease',
-                          transitionDelay: '0.8s'
+                          transitionDelay: '0.5s'
                       }}
                     >
                         PROJECTS
