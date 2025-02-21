@@ -205,7 +205,7 @@ export default function IntroSection2(){
                           transitionDelay: '0.2s'
                       }}
                     >
-                        ABOUT,
+                        ABOUT.
                     </div>
                     <div 
                       style={{
@@ -215,7 +215,7 @@ export default function IntroSection2(){
                           transitionDelay: '0.5s'
                       }}
                     >
-                        PROJECTS
+                        PROJECTS.
                     </div>
                 </nav>
 

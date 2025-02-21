@@ -133,9 +133,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.skillDescription{
-    font-size: 20px;
+    padding-left: 50px;
 }
 
 .logoBox{
@@ -161,6 +159,10 @@
 
 .imgBox{
     width: 200px;
+    height: 200px;
+}
+.imgBox2{
+    width: 380px;
     height: 200px;
 }
 .skillLogo{
@@ -200,7 +202,15 @@
     padding: 3px 0;
     text-transform: uppercase;
 }
+@media (max-width:1600px){
+    .infoText{
+        font-size: 33px;
+    }
+    .logoBox2{
+        grid-template-columns: repeat(1, 1fr);
+    }
 
+}
 @media (max-width:1500px) {
     .siteTitle{
         top: 30px;
@@ -215,6 +225,24 @@
 
     .s3 {
         top: 380px;
+    }
+   
+    .imgBox{
+        width: 150px;
+        height: 150px;
+    }
+    .num{
+        font-size: 4vw;
+    }
+}
+
+@media (max-width:1300px){
+    .infoText{
+        font-size: 30px;
+    }
+    .imgBox2{
+        width: 330px;
+        height: 150px;
     }
 }
 
@@ -253,5 +281,55 @@
         width: 90%;
         margin-left: 5%;
         padding: 5px 0;
+    }
+    .infoText{
+        font-size: 25px;
+    }
+    .imgBox{
+        width: 120px;
+        height: 120px;
+    }
+    .num{
+        font-size: 5vw;
+    }
+}
+@media (max-width:900px){
+    .skillContent{
+        flex-direction: column;
+    }
+    .infoText{
+        width: 90%;
+    }
+    .info{
+        flex: 1;
+    }
+    .contentLeft{
+        padding-left: 0;
+        padding-top: 70px;
+    }
+    .siteTitle {
+        height: 8.5vw;
+        font-size: 7vw;
+        text-transform: uppercase;
+        border-bottom: 1vw solid black;
+        margin-bottom: 10px;
+    }
+    .s1 {
+        top: 70px;
+    }
+
+    .s2 {
+        top: 150px;
+    }
+
+    .s3 {
+        top: 230px;
+    }
+    .num{
+        font-size: 6vw;
+    }
+    .imgBox2{
+        width: 310px;
+        height: 130px;
     }
 }

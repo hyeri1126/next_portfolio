@@ -55,10 +55,10 @@ export default function SkillSection() {
                         <div className={styles.skillContent}>
                             <div className={styles.contentLeft}>
                                 <div className={styles.logoBox2}>
-                                    <div style={{width:"380px", height:"200px"}} >
+                                    <div className={styles.imgBox2} >
                                         <img src="/images/skill/threejs.png" alt="HTML5 Logo" className={styles.skillLogo} />
                                     </div>
-                                    <div style={{width:"380px", height:"200px"}}>
+                                    <div className={styles.imgBox2}>
                                         <img src="/images/skill/gsap.png" alt="HTML5 Logo" className={styles.skillLogo} />
                                     </div>
                                     
@@ -81,10 +81,10 @@ export default function SkillSection() {
                         <div className={styles.skillContent}>
                             <div className={styles.contentLeft}>
                                 <div className={styles.logoBox2}>
-                                    <div style={{width:"380px", height:"200px"}} >
+                                    <div className={styles.imgBox2} >
                                         <img src="/images/skill/nodejs.png" alt="HTML5 Logo" className={styles.skillLogo} />
                                     </div>
-                                    <div style={{width:"380px", height:"200px"}}>
+                                    <div className={styles.imgBox2}>
                                         <img src="/images/skill/docker.png" alt="HTML5 Logo" className={styles.skillLogo} />
                                     </div>
                                     
@@ -107,13 +107,13 @@ export default function SkillSection() {
                         <div className={styles.skillContent}>
                             <div className={styles.contentLeft}>
                                 <div className={styles.logoBox3}>
-                                    <div style={{width:"380px", height:"200px"}} >
+                                    <div className={styles.imgBox2} >
                                         <img src="/images/skill/github.png" alt="HTML5 Logo" className={styles.skillLogo} />
                                     </div>
-                                    <div style={{width:"380px", height:"200px"}}>
+                                    <div className={styles.imgBox2}>
                                         <img src="/images/skill/figma.png" alt="HTML5 Logo" className={styles.skillLogo} />
                                     </div>
-                                    <div style={{width:"380px", height:"200px"}}>
+                                    <div className={styles.imgBox2}>
                                         <img src="/images/skill/jira.png" alt="HTML5 Logo" className={styles.skillLogo} />
                                     </div>
                                     
