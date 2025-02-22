@@ -1,16 +1,4 @@
 @font-face {
-    font-family: 'SangSangRock';
-    src: url('https://gcore.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/SangSangRockOTF.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'KOTRAHOPE';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/KOTRAHOPE.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
     font-family: 'EarlyFontDiary';
     src: url('https://gcore.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EarlyFontDiary.woff2') format('woff2');
     font-weight: normal;
@@ -84,7 +72,6 @@
     /* font-family: 'SangSangRock'; */
     /* font-family: 'KOTRAHOPE'; */
     /* font-family: 'EarlyFontDiary'; */
-    font-family:'Helvetica Neue';
     font-family: 'EarlyFontDiary';
 
 

@@ -80,7 +80,7 @@ export default function AboutSection() {
 
           <div className={styles.highlight}>
             <div className={styles.desc}>항상 "Yes, I can!"을 외치며 도전하겠습니다.</div>
-            <div className={styles.desc}>끊임없는 배우고 성장해 시대에 뒤쳐지지 않겠습니다.</div>
+            <div className={styles.desc}>끊임없이 배우고 성장해 시대에 뒤쳐지지 않겠습니다.</div>
             <div className={styles.desc}>어디서든 신뢰받고 도움이 되는 인재로 자리매김하겠습니다.</div>
           </div>
       
