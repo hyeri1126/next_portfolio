@@ -1,7 +1,7 @@
 .sectionBox{
   /* width: 100vw;
   height: 100vh; */
-  font-family: "Gilroy";
+  font-family: 'NEXON Lv2 Gothic';
   position: relative;
 }
 
@@ -54,6 +54,8 @@
   display: flex;
   width: 100%;
   height: calc(100% - 200px);
+  font-family: 'NEXON Lv2 Gothic';
+
 }
 
 .descLeft{

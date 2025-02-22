@@ -88,46 +88,34 @@ export default function ContactSection({ marqueeRef }){
 
     window.addEventListener("mousemove", onMouseMove);
 
-    // gsap.to(sectionRef.current, {
-    //   y: -300, 
-    //   scrollTrigger: {
-    //     trigger: sectionRef.current, 
-    //     start: "top 80%", 
-    //     end: "70% 60%", 
-    //     markers: true, 
-    //     scrub:true,
-    //   },
-    // });
-
-    if (marqueeRef.current && sectionRef.current) {
-      const tl = gsap.timeline({
-        scrollTrigger: {
+  
+    const createScrollTrigger = () =>{
+      return  ScrollTrigger.create({
+          id: "contactSection",
           trigger: marqueeRef.current,
           start: "top 70%",
           end: "bottom top",
           scrub: 1,
           toggleActions: "play reverse play reverse",
-        }
-      });
-
-      tl.fromTo(sectionRef.current, 
-        {
-          y: 0,  // 시작 위치를 화면 아래로
-        },
-        {
-          y: "-20vh",      // 최종 위치를 위로
+          animation: gsap.to(sectionRef.current, {
+          y: "-20vh",
           ease: "none",
-        }
-      );
+        })
+      });
     }
 
+    // createScrollTrigger의 반환값을 변수에 저장하여 재사용 가능하게함 
+    let st = createScrollTrigger();
 
-    return () => {
-      window.removeEventListener("mousemove", onMouseMove);
-      if (requestId) {
-        cancelAnimationFrame(requestId);
-      }
+    const handleResize = () => {
+        st.kill();
+        st = createScrollTrigger();
     };
+
+    window.addEventListener("resize", handleResize);
+ 
+  
+  
 
   },[marqueeRef]);
 
