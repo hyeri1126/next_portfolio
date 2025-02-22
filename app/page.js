@@ -7,7 +7,6 @@ import HorizontalSection from "@/components/Section/HorizontalSection";
 import MarqueeSection from "@/components/Section/MarqueeSection";
 import AboutSection from "@/components/Section/AboutSection2";
 import ProjectIntroSection from "@/components/Section/ProjectIntroSection";
-import HorizontalSection2 from "@/components/Section/HorizontalSection2";
 import PublishingSection from "@/components/Section/PublishingSection";
 import MarqueeTextSection from "@/components/Section/MarqueeTextSection";
 import ContactSection from "@/components/Section/ContactSecion";
@@ -38,10 +37,7 @@ export default function Home() {
         </div>
         <SkillSection />
         <ProjectIntroSection />
-        <HorizontalSection2 />
-        {/* <div className="section-container" style={{backgroundColor: "black"}}>
-          <PublishingSection />
-        </div> */}
+        <HorizontalSection />
         <PublishingSection />
         <MarqueeTextSection  ref={marqueeRef}/>
         <ContactSection  marqueeRef={marqueeRef} />

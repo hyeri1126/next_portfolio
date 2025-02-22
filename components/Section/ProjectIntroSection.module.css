@@ -1,3 +1,16 @@
+
+@font-face {
+  font-family: 'EarlyFontDiary';
+  src: url('https://gcore.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EarlyFontDiary.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LOTTERIADDAG';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/LOTTERIADDAG.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
 .wrapper {
   position: relative;
   width: 100%;
@@ -16,7 +29,7 @@
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  padding: 4em 0;
+  padding: 5em 0;
   /* color: #05364c; */
   color: black;
   color:white;
@@ -24,23 +37,56 @@
 }
 
 .tagline {
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 500;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'NEXON Lv2 Gothic';
 }
+.taglineText {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.wavyUnderline {
+  position: absolute;
+  left: 0;
+  width: 105%;
+  height: 10px;
+  color: white; /* 물결 색상 */
+  pointer-events: none;
+  transform-origin: center center;
+  left: -2%;
+}
+
+
 
 .divider {
   width: 1.5px;
   height: 30%;
   background-color: white;
+  position: relative;
 }
 
+.divider::after {
+  content: '';
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  width: 15px;
+  height: 15px;
+  border-right: 4px solid white;
+  border-bottom: 4px solid white;
+  transform: translateX(-50%) rotate(45deg);
+}
 .intro_header {
   font-family:'Helvetica Neue';
-  font-size: 12vw;
-  font-weight: 400;
+  font-family: 'EarlyFontDiary';
+  font-family: 'LOTTERIADDAG';
+
+  font-size: 9vw;
+  /* font-weight: 400; */
   line-height: 1;
   letter-spacing: -0.025em;
 }

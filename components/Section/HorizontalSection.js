@@ -1,11 +1,11 @@
 'use client'
 
 import { useEffect, useRef } from 'react';
-import styles from "./HorizontalSection2.module.css";
+import styles from "./HorizontalSection.module.css";
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 
-export default function HorizontalSection2(){
+export default function HorizontalSection(){
   const stickyRef = useRef(null);
   const slidesContainerRef = useRef(null);
   const sliderRef = useRef(null);

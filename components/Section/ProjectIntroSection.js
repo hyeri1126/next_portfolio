@@ -62,7 +62,17 @@ const ProjectIntroSection = () => {
     <div className={styles.wrapper}>
       <section className={styles.intro}>
         <div className={styles.tagline}>
-          <p>제가 작업한 프로젝트를 소개합니다.</p>
+          <p className={styles.taglineText}>프론트엔드 개발자로 성장하기 위해 작업한 주요 프로젝트들을 소개합니다.
+            <svg className={styles.wavyUnderline} viewBox="0 0 100 5" preserveAspectRatio="none">
+              <path 
+                d="M0,1 C20,-1 30,4 50,1 C70,-2 80,4 100,1" 
+                stroke="currentColor" 
+                fill="none" 
+                strokeWidth="1"
+              />
+            </svg>
+          
+          </p>
         </div>
         <div className={styles.divider}></div>
         <div className={styles.intro_header}>
