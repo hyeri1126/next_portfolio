@@ -1,8 +1,6 @@
 'use client';
 import { useEffect, useState } from "react";
 import { useRef } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import IntroSection2 from "@/components/Section/IntroSection2";
 import SkillSection from "@/components/Section/SkillSection";
 import HorizontalSection from "@/components/Section/HorizontalSection";
@@ -10,8 +8,7 @@ import MarqueeSection from "@/components/Section/MarqueeSection";
 import AboutSection from "@/components/Section/AboutSection2";
 import ProjectIntroSection from "@/components/Section/ProjectIntroSection";
 import HorizontalSection2 from "@/components/Section/HorizontalSection2";
-import PublishingSection from "@/components/Section/PublishingSection2";
-import LenisWrapper from "@/components/Animations/LenisWrapper";
+import PublishingSection from "@/components/Section/PublishingSection";
 import MarqueeTextSection from "@/components/Section/MarqueeTextSection";
 import ContactSection from "@/components/Section/ContactSecion";
 

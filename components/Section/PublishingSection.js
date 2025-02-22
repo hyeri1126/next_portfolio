@@ -1,5 +1,5 @@
 import Masonry from "react-masonry-css";
-import styles from "./PublishingSection2.module.css";
+import styles from "./PublishingSection.module.css";
 
 export default  function PublishingSection(){
 
