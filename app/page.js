@@ -42,9 +42,9 @@ export default function Home() {
         <SkillSection />
         <ProjectIntroSection />
         <HorizontalSection2 />
-        <div className="section-container" style={{backgroundColor: "black"}}>
+        {/* <div className="section-container" style={{backgroundColor: "black"}}>
           <PublishingSection />
-        </div>
+        </div> */}
         <MarqueeTextSection  ref={marqueeRef}/>
         <ContactSection  marqueeRef={marqueeRef} />
       </div>

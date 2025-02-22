@@ -88,16 +88,38 @@ export default function ContactSection({ marqueeRef }){
 
     window.addEventListener("mousemove", onMouseMove);
 
-    gsap.to(sectionRef.current, {
-      y: -300, // 살짝 위로 이동
-      scrollTrigger: {
-        trigger: sectionRef.current, // MarqueeSection 기준
-        start: "top 80%", 
-        end: "70% 60%", 
-        markers: true, 
-        scrub:true,
-      },
-    });
+    // gsap.to(sectionRef.current, {
+    //   y: -300, 
+    //   scrollTrigger: {
+    //     trigger: sectionRef.current, 
+    //     start: "top 80%", 
+    //     end: "70% 60%", 
+    //     markers: true, 
+    //     scrub:true,
+    //   },
+    // });
+
+    if (marqueeRef.current && sectionRef.current) {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: marqueeRef.current,
+          start: "top 70%",
+          end: "bottom top",
+          scrub: 1,
+          toggleActions: "play reverse play reverse",
+        }
+      });
+
+      tl.fromTo(sectionRef.current, 
+        {
+          y: 0,  // 시작 위치를 화면 아래로
+        },
+        {
+          y: "-20vh",      // 최종 위치를 위로
+          ease: "none",
+        }
+      );
+    }
 
 
     return () => {
@@ -110,79 +132,82 @@ export default function ContactSection({ marqueeRef }){
   },[marqueeRef]);
 
   return(
-    <div ref={sectionRef} className={`contact-section ${styles.section}`} >
-      <div className={styles.wrapper}>
-         <svg 
-            ref={svgRef} 
-            viewBox="0 0 1200 800"
-            className={styles.svg}
-          >
-            {/* 왼쪽 눈 */}
-            <circle
-              className="eye-outer"
-              cx="500"
-              cy="400"
-              r="100"
-              fill="#fff"
-            />
-            <circle 
-              ref={leftBlackRef}
-              className="eye-inner"
-              cx="500" 
-              cy="400" 
-              r="50"
-              fill="#000"
-            />
-            <circle 
-              ref={leftWhiteRef}
-              className="eye-highlight"
-              cx="485"
-              cy="410"
-              r="5"
-              fill="#fff"
-            />
-            
-            {/* 오른쪽 눈 */}
-            <circle
-              className="eye-outer"
-              cx="700"
-              cy="400"
-              r="100"
-              fill="#fff"
-            />
-            <circle 
-              ref={rightBlackRef}
-              className="eye-inner"
-              cx="700"
-              cy="400"
-              r="50"
-              fill="#000"
-            />
-            <circle 
-              ref={rightWhiteRef}
-              className="eye-highlight"
-              cx="685"
-              cy="410"
-              r="5"
-              fill="#fff"
-            />
-          </svg>
-        <div className={styles.container}>
-          <a className={styles.text} href="#">Instagram</a>
-          <a className={styles.text} href="#">TISTORY</a>
-          <a className={styles.text} href="#">GITHUB</a>
+    <div className={styles.sectionBox}>
+      <div ref={sectionRef} className={`contact-section ${styles.section}`} >
+        <div className={styles.wrapper}>
+          <svg 
+              ref={svgRef} 
+              viewBox="0 0 1200 800"
+              className={styles.svg}
+            >
+              {/* 왼쪽 눈 */}
+              <circle
+                className="eye-outer"
+                cx="500"
+                cy="400"
+                r="100"
+                fill="#fff"
+              />
+              <circle 
+                ref={leftBlackRef}
+                className="eye-inner"
+                cx="500" 
+                cy="400" 
+                r="50"
+                fill="#000"
+              />
+              <circle 
+                ref={leftWhiteRef}
+                className="eye-highlight"
+                cx="485"
+                cy="410"
+                r="5"
+                fill="#fff"
+              />
+              
+              {/* 오른쪽 눈 */}
+              <circle
+                className="eye-outer"
+                cx="700"
+                cy="400"
+                r="100"
+                fill="#fff"
+              />
+              <circle 
+                ref={rightBlackRef}
+                className="eye-inner"
+                cx="700"
+                cy="400"
+                r="50"
+                fill="#000"
+              />
+              <circle 
+                ref={rightWhiteRef}
+                className="eye-highlight"
+                cx="685"
+                cy="410"
+                r="5"
+                fill="#fff"
+              />
+            </svg>
+          <div className={styles.container}>
+            <a className={styles.text} href="#">Instagram</a>
+            <a className={styles.text} href="#">TISTORY</a>
+            <a className={styles.text} href="#">GITHUB</a>
+          </div>
         </div>
-      </div>
 
-      <div className={styles.footer}>
-        <div className={styles.left}>
-          Hyeri's Portfolio
-        </div>
-        <div className={styles.right}>
-          Seoul, South Korea
+        <div className={styles.footer}>
+          <div className={styles.left}>
+            Hyeri's Portfolio
+          </div>
+          <div className={styles.right}>
+            Seoul, South Korea
+          </div>
         </div>
       </div>
     </div>
+  
 
   )
 

@@ -1,15 +1,24 @@
-.section{
+.sectionBox{
   width: 100vw;
-  height: 100%;
+  height: 80vh;
+  position: relative;
+  background-color: yellow;
+  border-radius: 30px 50px 0 0;
+}
+.section{
+  width: 100%;
+  height: 100vh;
   background-color: blanchedalmond;
   background-color: #894A57;
   background-color: #C77372;
   background-color: #0f0f0f;
-  position: relative; /* 부모 컨텍스트를 유지 */
-  overflow: hidden !important;
-  border-radius: 30px 50px 0 0;
+  /* position: relative;  */
   position: absolute;
-  transform: translateY(0);
+  top: 0;
+  left: 0;
+  border-radius: 30px 50px 0 0;
+  /* position: relative; */
+  z-index: 2;
 }
 .wrapper{
  

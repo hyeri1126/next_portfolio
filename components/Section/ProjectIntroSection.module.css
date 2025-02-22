@@ -28,6 +28,7 @@
   font-weight: 500;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'NEXON Lv2 Gothic';
 }
 
 .divider {
@@ -112,7 +113,7 @@
   background-color: transparent;
 }
 
-@media (max-width:900px){
+@media (max-width:1300px){
   .divider{
     height: 40%;
   }
