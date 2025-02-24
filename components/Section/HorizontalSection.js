@@ -304,7 +304,7 @@ export default function HorizontalSection(){
                 </div>
                 <div className={styles.descRight}>
                   <div className={styles.imgBox}>
-                    <img src="/images/projects/project3_main.jpg" className={styles.img} />
+                    <ImageSlider />
                   </div>
                 </div>
               </div>

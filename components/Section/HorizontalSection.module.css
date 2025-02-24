@@ -147,6 +147,7 @@
   justify-content: center;
   align-items: center;
   margin-right: 20px;
+  overflow: hidden;
 }
 
 
@@ -220,8 +221,8 @@
   object-fit: cover;
 }
 .imgBox{
-  width: 90%;
-  height: 80%;
+  width: 80%;
+  height: 70%;
   border-radius: 20px;
   overflow: hidden;
   border: 1px solid rgb(255, 255, 255, 0.8);
@@ -232,36 +233,6 @@
   height: 100%;
   object-fit: cover;
 }
-.mySwiper {
-  width: 100%;
-  height: 100%;
-  position: absolute; /* 추가 */
-  inset: 0; /* 추가 */
-}
-
-.swiper-slide {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-/* 필요한 경우 네비게이션 버튼 스타일링 */
-.mySwiper :global(.swiper-button-next),
-.mySwiper :global(.swiper-button-prev) {
-  color: white;
-}
-
-/* 페이지네이션 스타일링 */
-.mySwiper :global(.swiper-pagination-bullet) {
-  background: white;
-}
-
-.mySwiper :global(.swiper-pagination-bullet-active) {
-  background: #64B5F6;
-}
-
-
 @media screen and (max-width: 1730px) {
   .title h1 {
     font-size: 70px;
