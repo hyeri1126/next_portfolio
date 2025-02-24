@@ -86,18 +86,20 @@ const ProjectIntroSection = () => {
           <div className={styles.gallery_wrapper} ref={galleryWrapperRef}>
             <div className={styles.col} ref={addSideColRef}>
               <div className={styles.img_wrapper}><img src="/images/projectIntro/img1.jpg" alt="" className={styles.img} /></div>
-              <div className={styles.img_wrapper}><img src="/images/projectIntro/img2.jpg" alt="" className={styles.img} /></div>
+              <div className={styles.img_wrapper}><img src="/images/projectIntro/img.jpg" alt="" className={styles.img} /></div>
               <div className={styles.img_wrapper}><img src="/images/projectIntro/img3.jpg" alt="" className={styles.img} /></div>
             </div>
             
             <div className={styles.col} ref={addSideColRef}>
-              <div className={styles.img_wrapper}><img src="/images/projectIntro/img4.jpg" alt="" className={styles.img} /></div>
+              <div className={styles.img_wrapper}><img src="/images/gif/3dinteractive.gif" alt="" className={styles.img} /></div>
               <div className={styles.img_wrapper}><img src="/images/projectIntro/img5.jpg" alt="" className={styles.img} /></div>
               <div className={styles.img_wrapper}><img src="/images/projectIntro/img6.jpg" alt="" className={styles.img} /></div>
             </div>
             
             <div className={styles.col}>
-              <div className={styles.img_wrapper}><img src="/images/projectIntro/img7.jpg" alt="" className={styles.img} /></div>
+              {/* <div className={styles.img_wrapper}><img src="/images/projectIntro/img7.jpg" alt="" className={styles.img} /></div> */}
+              <div className={styles.img_wrapper}><img src="/images/gif/3dscroll.gif" alt="" className={styles.img} /></div>
+
               <div className={styles.img_wrapper}>
                 <img 
                   ref={mainImgRef}

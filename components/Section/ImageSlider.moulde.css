@@ -1,0 +1,25 @@
+.swiper{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.slideImage{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* 네비게이션 버튼 스타일링 */
+:global(.swiper-button-next),
+:global(.swiper-button-prev) {
+  color: white;
+}
+
+/* 페이지네이션 스타일링 */
+:global(.swiper-pagination-bullet) {
+  background: white;
+}
+
+:global(.swiper-pagination-bullet-active) {
+  background: #64B5F6;
+}

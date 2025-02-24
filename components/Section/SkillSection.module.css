@@ -96,39 +96,12 @@
     top: 1vw;
 }
 
-.text {
-    text-align: center;
-    margin-bottom: 1rem;
-    color: white;
-}
-
-.text > div {
-    font-size: 3vw;
-    line-height: 1;
-    font-weight: 900;
-    text-transform: uppercase;
-    text-decoration: underline;
-}
-
 .title {
     margin-bottom: 1rem;
 }
 
-.btn a {
-    text-decoration: underline;
-    text-transform: uppercase;
-    color: var(--black200);
-    font-size: 1rem;
-    transition: all 0.3s;
-    margin: 0 2px;
-}
-
-.btn a:hover {
-    color: var(--black);
-}
 
 .skillContent{
-    /* width: 100%; */
     width: 100%;
     height: 100%;
     display: flex;
@@ -198,7 +171,7 @@
 .infoText{
     width: 60%;
     font-family: 'Pretendard-Regular';
-    font-size: 30px;
+    font-size: 28px;
     /* font-weight: 600; */
     /* font-family: 'NEXON Lv2 Gothic'; */
 
@@ -216,16 +189,10 @@
     justify-content: space-between;
 } */
 
-.info span {
-    font-family: var(--mainKor-font);
-    font-size: 12px;
-    padding: 3px 0;
-    text-transform: uppercase;
-}
 
 @media (max-width:1700px){
     .infoText{
-        font-size: 28px;
+        font-size: 26px;
         width: 80%;
     }
     .logoBox2{
@@ -324,17 +291,19 @@
         grid-template-columns: repeat(2, 1fr);
     
     }
-}
-@media (max-width:900px){
     .skillContent{
         flex-direction: column;
     }
-    .infoText{
-        width: 90%;
-        font-size: 20px;
+    .imgBox2{
+        width: 280px;
+        height: 120px;
     }
-    .info{
-        flex: 1;
+    .imgBox3{
+        width: 250px;
+        height: 110px;
+    }
+    .logoBox4{
+        padding-bottom: 30px;
     }
     .contentLeft{
         padding-left: 0;
@@ -342,6 +311,18 @@
         padding-bottom: 10px;
         flex:1.2;
     }
+      
+    .infoText{
+        width: 90%;
+        font-size: 20px;
+    }
+    .info{
+        flex: 1;
+    }
+}
+@media (max-width:900px){
+  
+    
     .siteTitle {
         height: 8.5vw;
         font-size: 7vw;
@@ -363,17 +344,7 @@
     .num{
         font-size: 6vw;
     }
-    .imgBox2{
-        width: 280px;
-        height: 120px;
-    }
-    .imgBox3{
-        width: 250px;
-        height: 110px;
-    }
-    .logoBox4{
-        padding-bottom: 30px;
-    }
+   
 }
 
 @media (min-width: 680px) and (max-width: 900px) {
