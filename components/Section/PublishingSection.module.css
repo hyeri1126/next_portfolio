@@ -15,6 +15,7 @@
   border-radius: 50px 80px 0 0;
   /* border-top: 0.5px solid rgb(255, 255, 255, 0.2); */
   box-shadow: 0px -5px 15px rgba(255, 255, 255, 0.2 );
+  padding-bottom: 50px;
 
 }
 
@@ -35,7 +36,6 @@
   text-align: center;
   font-size: 30px;
   font-weight: bold;
-  text-transform: uppercase;
 }
 .subText{
   font-size: 18px;
@@ -48,7 +48,6 @@
   max-width: 90%;
   display: flex;
   margin: 0 auto;
-  width: auto;
 }
 
 .wallColumn {
@@ -59,7 +58,7 @@
 .wallItem {
   width: 100%;
   background-color: #1e1e1e;
-  padding: 12px;
+  padding: 12px 12px 20px 12px;
   margin-bottom: 22px;
   border-radius: 3px;
   transition: all 200ms;
@@ -72,7 +71,7 @@
 
 .wallItem img {
   width: 100%;
-  margin: 0 0 10px 0;
+  /* margin: 0 0 10px 0; */
   display: block;
   padding: 30px 20px;
   border-radius: 3px;
@@ -89,7 +88,18 @@
 
 .wallItem p {
   text-align: center;
-  color: #505050;
+  /* color: #505050; */
+  color: rgb(245, 245, 245, 0.8);
   font-weight: 300;
   margin: 10px 0px;
+}
+
+@media (max-width:1200px){
+  .wall{
+    padding-right: 30px;
+  }
+  .wallColumn{
+    padding-left: 10px;
+  }
+ 
 }

@@ -368,13 +368,9 @@ export default function HorizontalSection(){
                       Libraries: Swiper, Split-Type, React-Masonry-CSS
                     </div>
                     <div><strong>핵심 성과 및 성장 포인트:</strong>
-                      <ul>
-                        <li>
-                          자기 소개와 작업물을 체계적으로 정리한 포트폴리오를 
-                          웹으로 제작함으로써 FE 개발자로서 취업시장에서 경쟁력 확보
-                          - 기술적 역량을 시각적으로 증명할 수 있는 플랫폼 구축
-                        </li>
-                      </ul>
+                      자기 소개와 작업물을 체계적으로 정리한 포트폴리오를 
+                      웹으로 제작함으로써 FE 개발자로서 취업시장에서 경쟁력 확보
+                      - 기술적 역량을 시각적으로 증명할 수 있는 플랫폼 구축
                     </div>
                   </div>
                 </div>

@@ -224,7 +224,7 @@ export default function IntroSection2(){
                   className={styles.introText}
                 >
                   내일의 나는 더 나은 내가 되기 위해 성장 중인  류혜리입니다.
-                  프론트엔드 개발자로 취업하기 위한 그동안의 여정과 노력을 담은 포트폴리오를 즐겨주세요.
+                  프론트엔드 개발자로 취업하기 위한 그동안의 여정과 노력을 담은 포트폴리오입니다.
                 </div>
 
 

@@ -54,11 +54,11 @@
 .text {
   text-decoration: none;
   font-family: "Confillia Bold", sans-serif;
-  font-size: 250px;
+  font-size: 10vw;
   font-weight: bolder;
-  line-height: 250px;
+  line-height: 10vw;
   /* color: #0f0f0f; */
-  height: 250px;
+  height: 10vw;
   overflow: hidden;
   text-transform: uppercase;
   color: white;
@@ -72,8 +72,8 @@
   display: flex;
   justify-content: space-between;
   padding: 2em;
-  border-top: 1px solid rgba(0, 0, 0, 0.25);
-  /* color: white; */
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  color: white;
 }
 
 .text:hover .letter {
@@ -99,3 +99,17 @@
 .letter:nth-child(11) { transition-delay: 0.15s; }
 .letter:nth-child(12) { transition-delay: 0.165s; }
  
+
+/* @media (max-width:1200px){
+  .text {
+    font-size: 180px;
+    line-height: 180px;
+  }
+}
+
+@media (max-width:900px){
+  .text {
+    font-size: 130px;
+    line-height: 130px;
+  }
+} */

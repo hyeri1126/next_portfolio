@@ -5,25 +5,18 @@ export default  function PublishingSection(){
 
   const breakpointColumnsObj = {
     default: 3,
-    1100: 3,
-    700: 2,
+    1500: 3,
+    1200: 2,
     500: 1
   };
 
 
   const items = [
-    { img: '/images/kitty1.jpg' },
-    { img: '/images/kitty1.jpg' },
-    { img: '/images/marquee/hero.jpg' },
-    { img: '/images/kitty1.jpg' },
-    { img: '/images/skill/' },
-    { img: '/images/eyes.jpg' },
-    { img: '/images/black2.jpg' },
-    { img: '/images/book.jpg' },
-    { img: '/images/marquee/hero.jpg' },
-    { img: '/images/graybackground.jpg' },
-    { img: '/images/laptop2.jpg' },
-    { img: '/images/laptop5.jpg' },
+    { img: '/images/kitty1.jpg', title: 'GeeBlock Web', desc: '처음으로 외주를 받아 작업한 퍼블리싱 작품, GeeBlock 블록체인 회사의 랜딩페이지 작업' },
+    { img: '/images/gif/portfolio.gif', title:"Frontend Web Porfolio", desc: '현재 포트폴리오 이전 처음으로 제작한 웹 포트폴리오' },
+    { img: '/images/gif/3dscroll.gif', title: '3D Interactive Web', desc:'스크롤에 의해 반응하는 3D 모델링(캔) 작업' },
+    { img: '/images/gif/3dscroll.gif', title: '3D Interactive Web', desc:'스크롤에 의해 반응하는 3D 모델링(캔) 작업' },
+
   ];
 
 
@@ -35,7 +28,7 @@ export default  function PublishingSection(){
             <div className={styles.mainText}>Publishing Projects</div>
             <div className={styles.subText}>
               코딩으로 그림 그린다는 것. <br />
-              지금까지 작업한 프로젝트들을 소개합니다. 
+              퍼블리싱 관련 작업물들을 소개합니다.
             </div>
           </header>
 
@@ -47,8 +40,8 @@ export default  function PublishingSection(){
             {items.map((item,index) =>(
               <div key={index} className={styles.wallItem}>
                 <img src={item.img}  alt="" />
-                <h2>Lorem ipsum dolor</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                <h2>{item.title}</h2>
+                <p>{item.desc}</p>
               </div>
             ))}
           </Masonry>
