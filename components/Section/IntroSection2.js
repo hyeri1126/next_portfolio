@@ -180,21 +180,16 @@ export default function IntroSection2(){
 
 
                 <div
-                 style={{
+                  style={{
                     transform: step >= 3 ? 'translateY(0)' : 'translateY(200%)',
                     opacity: step >= 3 ? 1 : 0,
                     transition: 'all 1s ease',
                     transitionDelay: '0.2s'
-                }}
-                 className={styles.logoTitle}
+                  }}
+                  className={styles.logoTitle}
                 >
                   Hyeri's Porfolio
                 </div>
-
-           
-           
-
-              
 
                 <nav className={styles.nav}>
                     <div 
@@ -218,65 +213,20 @@ export default function IntroSection2(){
                         PROJECTS.
                     </div>
                 </nav>
+                
+                <div
+                  style={{
+                    transform: step >= 3 ? 'translateY(0)' : 'translateY(200%)',
+                    opacity: step >= 3 ? 1 : 0,
+                    transition: 'all 1s ease',
+                    transitionDelay: '0.2s'  
+                  }}
+                  className={styles.introText}
+                >
+                  내일의 나는 더 나은 내가 되기 위해 성장 중인  류혜리입니다.
+                  프론트엔드 개발자로 취업하기 위한 그동안의 여정과 노력을 담은 포트폴리오를 즐겨주세요.
+                </div>
 
-     
-                {/* <h1 className={styles.title}>
-                    <div className={styles.textWrapper}>
-                    {firstText.split('').map((char, index) => (
-                        <span key={`first-${index}`} className={styles.letterWrapper}>
-                            <span
-                                className={styles.letter}
-                                style={{
-                                    transitionDelay: `${index * 160}ms`,
-                                    transform: step >= 1 ? 
-                                        (step === 1 ? 'translateY(0)' : 'translateY(50%)') : 
-                                        'translateY(200%)',
-                                    opacity: step === 1 ? 1 : 0
-                                }}
-                            >
-                                {char}
-                            </span>
-                        </span>
-                    ))}
-                    </div>
-
-                    <div className={styles.textWrapper}>
-                        {secondText.map((char, index) => (
-                            <span key={`second-${index}`} className={styles.letterWrapper}>
-                                {char === ' ' ? (
-                                   <span 
-                                        style={{
-                                            display: 'inline-block',
-                                            transitionDelay: `${index * 150}ms`,
-                                            opacity: step >= 2 ? 1 : 0,
-                                        }}
-                                    >
-                                        <span 
-                                            className={styles.customOShape}
-                                            style={{
-                                                transform: step >= 2 ? 'scale(1)' : 'scale(0)',
-                                                transformOrigin: 'bottom left',
-                                                transition: 'transform 2000ms'
-                                            }}
-                                        />
-                                    </span>
-                                ) : (
-                                    <span
-                                        className={styles.letter}
-                                        style={{
-                                            transitionDelay: `${index * 180}ms`,
-                                            transform: step >= 2 ? 'translateY(0)' : 'translateY(50%)',
-                                            opacity: step >= 2 ? 1 : 0
-                                        }}
-                                    >
-                                        {char}
-                                    </span>
-                                )}
-                            </span>
-                        ))}
-                    </div>
-
-                </h1> */}
 
 
             </section>

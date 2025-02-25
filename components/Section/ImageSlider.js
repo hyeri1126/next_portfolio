@@ -35,7 +35,16 @@ export default function ImageSlider(){
         >
           {images.map((image, index) => (
             <SwiperSlide key={index}>
-              <img src={image} alt="" className={styles.img} />
+              <div className={styles.slideImageContainer}>
+                <div className={styles.videoOverlay}>
+                  <div className={styles.linkContainer}>
+                    <div><a href="https://github.com/프로젝트3레포지토리" target="_blank">GitHub ↗️</a></div>
+                    <div><a href="https://hyerilog.tistory.com/" target="_blank">개발 블로그 ↗️</a></div>
+                    <div><a href="https://프로젝트URL" target="_blank">웹사이트 바로가기 ↗️</a></div>
+                  </div>
+                </div>
+                <img src={image} alt="" className={styles.img} />
+              </div>
             </SwiperSlide>       
           ))}
         </Swiper>
