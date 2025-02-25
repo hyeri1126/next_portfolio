@@ -18,23 +18,41 @@ export default function ImageSlider(){
   ];
 
   return(
-    <Swiper
-      modules={[Navigation, Pagination, Autoplay]}
-      spaceBetween={30}
-      slidesPerView={1}
-      navigation
-      pagination={{ 
-        clickable: true 
-       
-      }}
-      loop={true}
-      className={styles.swiper}
-    >
-      {images.map((image, index) => (
-        <SwiperSlide key={index}>
-          <img src={image} alt="" className={styles.img} />
-        </SwiperSlide>       
-      ))}
-    </Swiper>
+    <div className={styles.swiperWrapper}>
+        <Swiper
+          modules={[Navigation, Pagination, Autoplay]}
+          spaceBetween={30}
+          slidesPerView={1}
+          navigation={{
+            nextEl: '.custom-swiper-button-next',
+            prevEl: '.custom-swiper-button-prev',
+          }}
+          pagination={{ 
+            clickable: true 
+          }}
+          loop={true}
+          className={styles.swiper}
+        >
+          {images.map((image, index) => (
+            <SwiperSlide key={index}>
+              <img src={image} alt="" className={styles.img} />
+            </SwiperSlide>       
+          ))}
+        </Swiper>
+        {/* 커스텀 네비게이션 버튼 */}
+        <button className={`custom-swiper-button-prev ${styles.customSwiperButtonPrev}`}>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 19L8 12L15 5" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+        </button>
+        <button className={`custom-swiper-button-next ${styles.customSwiperButtonNext}`}>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 5L16 12L9 19" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+        </button>
+
+        
+    </div>
+  
   )
 }

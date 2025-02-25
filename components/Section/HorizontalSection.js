@@ -304,6 +304,9 @@ export default function HorizontalSection(){
                 </div>
                 <div className={styles.descRight}>
                   <div className={styles.imgBox}>
+                    <div className={styles.sliderText}>
+                      케어기버 서비스 주요화면 살펴보기:)
+                    </div>
                     <ImageSlider />
                   </div>
                 </div>
