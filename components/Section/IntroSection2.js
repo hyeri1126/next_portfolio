@@ -8,11 +8,17 @@ import { WaterEffect } from "../Animations/WaterEffect";
 
 export default function IntroSection2(){
     const [step, setStep] = useState(0);
+    const [backgroundImage, setBackgroundImage] = useState("/images/black2.jpg");
    
     const firstText = "Hyeri's";
     const secondText = ['S', 'T', ' ', 'R', 'I', 'E', 'S'];
 
     useEffect(()=>{
+
+      // 초기 로드 시에만 화면 크기 확인
+      if (window.innerWidth < 600) {
+        setBackgroundImage("/images/black1.jpg");
+      }
 
       // 스크롤 비활성화
       const disableScroll = () => {
@@ -113,7 +119,7 @@ export default function IntroSection2(){
                 <div id="water-effect-container" className={styles.waterEffectContainer}>
                     <WaterEffect 
                         containerId="water-effect-container" 
-                        backgroundImage="/images/black2.jpg"  
+                        backgroundImage={backgroundImage}  
                     />
                     <h1 className={styles.title}>
                         <div className={styles.textWrapper}>
