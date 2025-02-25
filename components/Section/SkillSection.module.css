@@ -24,6 +24,7 @@
     /* background-color: black; */
     font-family: "Big Shoulders Display";
     padding: 0 20px 20px 20px;
+    color: black;
 
 }
 
@@ -40,6 +41,7 @@
     /* color: var(--black100); */
     border-bottom: 0.4vw solid black;
     margin-bottom: 10px;
+    color: black;
 }
 
 .siteWrap{

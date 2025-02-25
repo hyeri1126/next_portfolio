@@ -433,8 +433,12 @@
     padding-left: 0;
   }
 
-  .descRight {
+  .descDetail {
+    font-size: 10px;
+    padding-right: 0;
+    width: 95%;
   }
+
   .imgBox2{
     width: 95%;
     height: 70%;
@@ -444,9 +448,7 @@
     margin-right: 0;
   }
   
-  .descDetail {
-    font-size: 10px;
-  }
+
 
   .descDetail > div {
     grid-template-columns: 100px 1fr;

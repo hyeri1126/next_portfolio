@@ -169,3 +169,10 @@
     height: 50vh;
   }
 }
+
+@media (max-width:600px){
+  .tagline {
+    font-size: 13px;
+    width: 70%;
+  }
+}

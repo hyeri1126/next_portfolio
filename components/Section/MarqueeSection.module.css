@@ -29,6 +29,7 @@
     /* color: white; */
     color: black;
     border-radius: 80px 80px 0 0;
+    overflow: hidden;
   }
   
   .marqueeContainer {
@@ -96,7 +97,7 @@
 
  @media (max-width: 767px) {
   .marquees{
-    height:100vh;
+      height:100vh;
   }
 
   .marqueeContainer {
@@ -105,24 +106,21 @@
   }
 
 
-  .item.withText {
-      flex: 1;
-  }
-
   .item h1 {
       font-size: clamp(30px, 6vw, 50px);
   }
 }
   
-@media (max-height: 600px) {
+@media (max-width: 600px) {
   .marquees{
-    height: 80vh;
+    height: 70vh;
+    border-radius: 40px 40px 0 0;
   }
   .marqueeContainer {
-      height: 120px;
+    height: 100px;
   }
 
   .item h1 {
-      font-size: clamp(25px, 5vw, 40px);
+      letter-spacing: -0.3rem;
   }
 }
