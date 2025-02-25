@@ -7,7 +7,7 @@ export default  function PublishingSection(){
     default: 3,
     1500: 3,
     1200: 2,
-    500: 1
+    800: 1
   };
 
 

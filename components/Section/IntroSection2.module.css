@@ -207,6 +207,7 @@
     height: clamp(4rem, 12vw, 16rem);
 }
 
+
 @media screen and (max-height: 600px) {
     .title {
         font-size: clamp(6rem, 12vw, 18rem);
@@ -215,5 +216,13 @@
     .customOShape {
         width: clamp(6rem, 10vw, 12rem);
         height: clamp(6rem, 10vw, 12rem);
+    }
+}
+
+
+@media (max-width:1200px){
+    .introText{
+        width: 80%;
+        font-size: 14px;
     }
 }

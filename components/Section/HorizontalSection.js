@@ -387,7 +387,9 @@ export default function HorizontalSection(){
                           <div><a href="https://포트폴리오URL" target="_blank">웹사이트 바로가기 ↗️</a></div>
                         </div>
                       </div>
-                      <img src='/images/gif/nextportfolio.gif' className={styles.gif} />
+                      <div className={styles.gifBox}>
+                        <img src='/images/gif/nextportfolio.gif' className={styles.gif} />
+                      </div>
                     </div>
                   </div>
                 </div>
