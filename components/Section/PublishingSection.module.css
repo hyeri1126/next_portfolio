@@ -103,3 +103,40 @@
   }
  
 }
+
+@media (max-width:700px){
+  .header{
+    gap: 15px;
+    padding: 50px;
+    font-weight: 500;
+  }
+  .mainText{
+    font-size: 20px;
+  }
+  .subText{
+    font-size: 14px;
+  }
+  .wallItem {
+    padding: 8px 8px 13px 8px;
+    border-radius: 3px;
+    transition: all 200ms;
+    border-radius: 8px;
+  }
+  .wallItem img {
+    padding: 10px;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  
+  .wallItem h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  
+  .wallItem p {
+    font-size: 10px;
+    margin: 10px 0px 0px 0px;
+  }
+}
