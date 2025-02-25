@@ -5,6 +5,7 @@ import styles from './ProjectIntroSection.module.css';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 
+
 const ProjectIntroSection = () => {
   const galleryWrapperRef = useRef(null);
   const sideColsRef = useRef([]);
@@ -42,7 +43,7 @@ const ProjectIntroSection = () => {
           }
         });
 
-        mainImgRef.current.style.transform = `scale(${mainImgScale})`;
+        // mainImgRef.current.style.transform = `scale(${mainImgScale})`;
       },
     });
 
@@ -91,30 +92,31 @@ const ProjectIntroSection = () => {
             </div>
             
             <div className={styles.col} ref={addSideColRef}>
-              <div className={styles.img_wrapper}><img src="/images/gif/3dinteractive.gif" alt="" className={styles.img} /></div>
-              <div className={styles.img_wrapper}><img src="/images/projectIntro/img5.jpg" alt="" className={styles.img} /></div>
-              <div className={styles.img_wrapper}><img src="/images/projectIntro/img6.jpg" alt="" className={styles.img} /></div>
+              <div className={styles.img_wrapper}><img    src="/images/gif/portfolio.gif"  alt="" className={styles.img} /></div>
+              <div className={styles.img_wrapper}><img src="/images/gif/landingpage.gif" alt="" className={styles.img} /></div>
+              <div className={styles.img_wrapper}><img src="/images/gif/menu.gif" alt="" className={styles.img} /></div>
             </div>
             
             <div className={styles.col}>
-              {/* <div className={styles.img_wrapper}><img src="/images/projectIntro/img7.jpg" alt="" className={styles.img} /></div> */}
               <div className={styles.img_wrapper}><img src="/images/gif/3dscroll.gif" alt="" className={styles.img} /></div>
 
               <div className={styles.img_wrapper}>
                 <img 
                   ref={mainImgRef}
-                  src="/images/projectIntro/img8.jpg" 
+                  // src="/images/gif/portfolio.gif" 
+                  src="/images/gif/hovereffect.gif"
                   alt="" 
                   className={`${styles.img} ${styles.main_img}`} 
                 />
               </div>
-              <div className={styles.img_wrapper}><img src="/images/projectIntro/img9.jpg" alt="" className={styles.img} /></div>
+              <div className={styles.img_wrapper}><img src="/images/gif/hovereffect.gif" alt="" className={styles.img} /></div>
             </div>
             
             <div className={styles.col} ref={addSideColRef}>
-              <div className={styles.img_wrapper}><img src="/images/projectIntro/img10.jpg" alt="" className={styles.img} /></div>
-              <div className={styles.img_wrapper}><img src="/images/projectIntro/img11.jpg" alt="" className={styles.img} /></div>
-              <div className={styles.img_wrapper}><img src="/images/projectIntro/img12.jpg" alt="" className={styles.img} /></div>
+              {/* <div className={styles.img_wrapper}><img src="/images/gif/hovereffect.gif" alt="" className={styles.img} /></div> */}
+              <div className={styles.img_wrapper}><img    src="/images/gif/columngallery.gif"  alt="" className={styles.img} /></div>
+              <div className={styles.img_wrapper}><img src="/images/gif/menu.gif" alt="" className={styles.img} /></div>
+              <div className={styles.img_wrapper}><img src="/images/gif/columngallery.gif" alt="" className={styles.img} /></div>
             </div>
             
             <div className={styles.col} ref={addSideColRef}>

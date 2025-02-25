@@ -29,24 +29,31 @@ export default  function PublishingSection(){
 
 
   return(
-    <div className={styles.section}>
-       <header className={styles.header}>
-        <h1>Responsive Grid Layout</h1>
-      </header>
+    <div className={styles.sectionWrapper}>
+        <div className={styles.section}>
+          <header className={styles.header}>
+            <div className={styles.mainText}>Publishing Projects</div>
+            <div className={styles.subText}>
+              코딩으로 그림 그린다는 것. <br />
+              지금까지 작업한 프로젝트들을 소개합니다. 
+            </div>
+          </header>
 
-      <Masonry
-        breakpointCols={breakpointColumnsObj}
-        className={styles.wall}
-        columnClassName = {styles.wallColumn}
-      >
-        {items.map((item,index) =>(
-          <div key={index} className={styles.wallItem}>
-            <img src={item.img}  alt="" />
-            <h2>Lorem ipsum dolor</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-          </div>
-        ))}
-      </Masonry>
+          <Masonry
+            breakpointCols={breakpointColumnsObj}
+            className={styles.wall}
+            columnClassName = {styles.wallColumn}
+          >
+            {items.map((item,index) =>(
+              <div key={index} className={styles.wallItem}>
+                <img src={item.img}  alt="" />
+                <h2>Lorem ipsum dolor</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+              </div>
+            ))}
+          </Masonry>
+        </div>
     </div>
+  
   )
 }

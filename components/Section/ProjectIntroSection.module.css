@@ -148,7 +148,7 @@
 
 .main_img {
   position: relative;
-  transform: scale(2);
+  /* transform: scale(2); */
   will-change: transform;
 }
 

@@ -36,7 +36,7 @@ export default function SkillSection() {
                             </div>
                             <div className={styles.info}>
                                 <div className={styles.infoText}> 
-                                    html,css,javascript를 기반으로 한 웹 애플리케이션 구축부터, React와 Next.js를 활용한 대규모 SPA(Single Page Application)을 개발합니다.
+                                    html,css,javascript를 기반으로 한 웹 애플리케이션 구축부터, React와 Next.js를 활용한 대규모 SPA을 개발합니다.
                                     또한 React Native를 활용한 크로스 플랫폼 모바일 앱 개발 경험을 보유하고 있습니다. <br />
                                     모던 웹 개발의 최신 트렌드를 지속적으로 학습하고 있으며, 특히 Next.js의 SSR/SSG, API Routes 기능을 적극 활용하여
                                     성능이 최적화된 웹 서비스를 구현합니다. <br />
@@ -65,11 +65,13 @@ export default function SkillSection() {
                             </div>
                             <div className={styles.info}>
                                 <div className={styles.infoText}> 
-                                    GSAP의 고급 기능인 ScrollTrigger와 Timeline을 활용하여 복잡한 스크롤 기반 애니메이션과 부드러운 패럴랙스 효과를 구현합니다. <br />
+                                    GSAP의 ScrollTrigger와 Timeline을 활용해 복잡한 스크롤 기반 애니메이션과 부드러운 패럴랙스 효과를 구현합니다. <br />
                                     Three.js와 WebGL을 활용한 3D 웹 그래픽스 개발에 전문성을 쌓기 위해 노력하고 있으며, 
-                                    커스텀 쉐이더, 3D 모델링, 카메라 컨트롤을 통해 몰입감 있는 인터랙티브 환경을 제공합니다. <br />
-                                    다양한 인터랙션 라이브러리에 대한 심층적인 이해를 바탕으로, 마치 메타버스 환경에 있는 듯한
-                                    웹 경험을 제공하는 것을 목표로 합니다.
+                                    커스텀 쉐이더와 카메라 컨트롤을 통해 몰입감 있는 인터랙티브 환경을 제공합니다. <br />
+                                    다양한 인터랙션 라이브러리를 활용해, 마치 메타버스 환경에 있는 듯한
+                                    웹 경험을 제공하는 것이 목표입니다. <br />
+                                    평소 3D 인터랙티브 웹에 깊은 관심을 가지고 있으며, CodeGrid 유튜브 채널과 AWWWARDS 웹사이트를 통해 
+                                    최신 트렌드와 혁신적인 기술을 학습하고 영감을 얻어 실제 프로젝트에 적용하고 있습니다.
                                 </div>
                             </div>
                         </div>
