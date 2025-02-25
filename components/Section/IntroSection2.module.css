@@ -208,7 +208,11 @@
 }
 
 
-@media screen and (max-height: 600px) {
+
+
+
+
+@media  (max-height: 800px) {
     .title {
         font-size: clamp(6rem, 12vw, 18rem);
     }
@@ -217,12 +221,20 @@
         width: clamp(6rem, 10vw, 12rem);
         height: clamp(6rem, 10vw, 12rem);
     }
+    
 }
 
-
-@media (max-width:1200px){
+@media (max-width:900px){
     .introText{
         width: 80%;
-        font-size: 14px;
+        font-size: 3vw;
+    }
+    .nav{
+        font-size: 3vw;
+        padding: 5px;
+    }
+    .logoTitle{
+        font-size: 3vw;
+        padding: 5px;
     }
 }

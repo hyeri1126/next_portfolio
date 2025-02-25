@@ -20,15 +20,19 @@ export default function AboutSection() {
 
     const chars = text.chars;
 
+    // 반응형 설정 추가
+    let endValue = window.innerWidth <= 600 ? "+=220%" : "+=100%";
+
     // 섹션 고정
     ScrollTrigger.create({
       trigger: section,
       start: "top top", // 섹션이 화면 중앙에 왔을 때 시작
-      end: "+=220%", // 스크롤 길이 조정
+      end: endValue, // 스크롤 길이 조정
       pin: true,
       pinSpacing: true,
+      direction: "both",
     });
-
+    
     // 글자별 애니메이션
     gsap.fromTo(
       chars,
@@ -43,8 +47,8 @@ export default function AboutSection() {
         scrollTrigger: {
           trigger: section,
           start: "top top",
-          end: "+=220%",
-          scrub: true,
+          end: endValue,
+          scrub: 0.5,
 
         },
       }
@@ -71,7 +75,7 @@ export default function AboutSection() {
       <div className={styles.parallaxBackground}></div>
       <div className={styles.container}>
         <div className={styles.content}>
-          <div>
+          <div className={styles.mainText}>
           
             아이디어를 현실로 구현할 수 있다는 매력에 이끌려 프론트엔드 개발자가 되었습니다. 
             사용자들에게 다양한 애니메이션과 인터랙션 기능을 통해 독창적이고 즐거운, 

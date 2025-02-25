@@ -70,9 +70,9 @@
     z-index: 1;
   }
   .content {
-    font-size: 2.3rem;
+    font-size: 1.5vw;
     line-height: 1.2;
-    font-weight: 6s00;
+    font-weight: 600;
     word-break: keep-all;
     display: flex;
     flex-direction: column;
@@ -90,12 +90,11 @@
     align-items: center; 
     padding: 2rem; /* 안쪽 여백 */
     overflow-x: hidden;
-
   }
   
   .desc {
     color: #333; /* 기본 글자 색 */
-    font-size: 1.8rem; /* 강조된 글자 크기 */
+    font-size: 1.3vw; /* 강조된 글자 크기 */
     font-weight: bold; /* 글씨 두께 */
     text-align: center; /* 텍스트 중앙 정렬 */
     /* background-color: rgba(255, 193, 7, 0.4);  */
@@ -126,27 +125,20 @@
     .container {
       max-width: 1000px;
     }
-    .content {
-      font-size: 2.2rem;
-    }
-    .desc{
-      font-size: 1.8rem;
-    }
-  }
-  @media (max-width: 1000px){
-    .content {
-      font-size: 2rem;
-    }
-    .desc{
-      font-size: 1.5rem;
-    }
-  }
   
-  @media (max-width: 768px) {
-    .content {
-      font-size: 1.8rem;
+  }
+  @media (max-width: 900px){
+    .mainText{
+      width: 80%;
+      margin: 0 auto;
+    }
+    .content{
+      font-size: 2.2vw;
     }
     .desc{
+      font-size: 1.8vw;
       width: 85%;
     }
   }
+  
+ 
