@@ -231,10 +231,12 @@
     }
     .nav{
         font-size: 3vw;
-        padding: 5px;
+        padding: 10px;
+        gap: 10px;
+        right: 0;
     }
     .logoTitle{
         font-size: 3vw;
-        padding: 5px;
+        padding: 10px;
     }
 }

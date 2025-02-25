@@ -275,6 +275,10 @@
     }
     .infoText{
         font-size: 20px;
+        width: 90%;
+    }
+    .logoBox{
+        gap: 10px;
     }
     .imgBox{
         width: 100px;
@@ -295,12 +299,12 @@
         flex-direction: column;
     }
     .imgBox2{
-        width: 280px;
-        height: 120px;
+        width: 180px;
+        height: 80px;
     }
     .imgBox3{
-        width: 250px;
-        height: 110px;
+        width: 140px;
+        height: 80px;
     }
     .logoBox4{
         padding-bottom: 30px;
@@ -309,19 +313,15 @@
         padding-left: 0;
         align-items: end;
         padding-bottom: 10px;
-        flex:1.2;
+        flex:1;
     }
       
-    .infoText{
-        width: 90%;
-        font-size: 20px;
-    }
+  
     .info{
         flex: 1;
     }
 }
 @media (max-width:900px){
-  
     
     .siteTitle {
         height: 8.5vw;
@@ -344,10 +344,13 @@
     .num{
         font-size: 6vw;
     }
+    .infoText{
+        font-size: 3vw;
+    }
    
 }
 
-@media (min-width: 680px) and (max-width: 900px) {
+/* @media (min-width: 680px) and (max-width: 900px) {
     .s1 {
         top: 95px;
     }
@@ -359,4 +362,24 @@
     .s3 {
         top: 255px;
     }
+} */
+
+
+@media (max-width:700px){
+    .imgBox{
+        width: 80px;
+        height: 80px;
+    }
+    .imgBox2{
+        width: 170px;
+        height: 80px;
+    }
 }
+@media (max-width: 400px) {
+    
+    /* 또는 top 값 조정 */
+    .s1 { top: 75px; }
+    .s2 { top: 100px; }
+    .s3 { top: 125px; }
+    .s4 { top: 150px; }
+  }

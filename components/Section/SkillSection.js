@@ -28,7 +28,7 @@ export default function SkillSection() {
                                     <div className={styles.imgBox}>
                                         <img src="/images/skill/reactnative.png" alt="HTML5 Logo" className={styles.skillLogo} />
                                     </div>
-                                    <div  >
+                                    <div className={styles.imgBox} >
                                         <img src="/images/skill/images.jpeg" alt="HTML5 Logo" className={styles.skillLogo} style={{borderRadius: "10px", overflow:"hidden"}} />
                                     </div>
                                     
