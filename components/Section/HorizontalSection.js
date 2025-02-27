@@ -191,13 +191,6 @@ export default function HorizontalSection(){
                   <div className={styles.imgBox2}>
                     <div className={styles.videoTitle}>프로젝트 시연 영상을 통해 서비스를 직접 체험해보세요:) </div>
                     <div className={styles.videoBox}>
-                      {/* <div className={styles.videoOverlay}>
-                        <div className={styles.linkContainer}>
-                          <div><a href="https://hyeri1126.github.io/hyeri-s-interactive-3d-web/" target="_blank">프로젝트 바로가기 ↗️</a></div>
-                          <div><a href="https://hyerilog.tistory.com/156" target="_blank">개발 블로그 ↗️</a></div>
-                          <div><a href="https://github.com/hyeri1126/3D_Interactive_Web" target="_blank">GitHub ↗️</a></div>
-                        </div>
-                      </div> */}
                       <iframe 
                         width="560" 
                         height="315" 
@@ -227,13 +220,9 @@ export default function HorizontalSection(){
                 <div className={styles.descLeft}>
 
                   <div className={styles.descTop}>
-                    <span className={styles.highlight}>반려인과 펫시터를 연결하는 모바일 플랫폼</span>으로,
-                    <span className={styles.highlight}>
-                      React Native 기반의 MVP 아키텍처</span>를 적용한 서비스입니다.
-                      반려견을 홀로 두고 외출하기 어려운 반려인들의 고민을 해결하고자 시작된 프로젝트로,
-                      누구나 쉽게 펫시터가 될 수 있는 낮은 진입장벽과 방문/위탁 펫시팅 등 다양한 서비스를 제공합니다. 
-                      특히 반려인/펫시터 모드 전환 기능을 통해 상황에 따라 서비스 제공자와 이용자 모두가 될 수 있는 
-                      유연한 플랫폼을 구현했습니다.
+                      케어기버는 반려견을 홀로 두고 외출하기 어려운 반려인들의 고민을 해결하고자 시작된 프로젝트로, <span className={styles.highlight}>반려인들을 위한 펫시터 매칭 플랫폼</span>입니다. 
+                      누구나 쉽게 펫시터가 될 수 있으며 반려인은 펫시터에게 펫시팅(방문/위탁)을 맡기고 마음 편하게 외출할 수 있습니다.
+                      특히 사용자는는 상황에 따라 반려인/펫시터 모드를 자유롭게 전환할 수 있어, 서비스 제공자와 이용자 모두가 될 수 있는 유연한 플랫폼입니다.
                   </div>
                   <div className={styles.descDetail}>
                     <div><strong>작업 기간:</strong> 2023년 5월 ~ 2023년 11월 (7개월)</div>
@@ -241,48 +230,36 @@ export default function HorizontalSection(){
                     <div><strong>기여도:</strong> 프론트엔드 개발 30% </div>
                     <div><strong>프로젝트 핵심 기능:</strong> 
                       <ul>
-                        <li>MVP 아키텍처 기반 설계
-                            - Presenter: Custom Hooks와 MobX 액션을 통한 UI 제어
-                            - View: 재사용 가능한 커스텀 컴포넌트 구현
-                            - Model: MobX State Tree를 활용한 상태 관리</li>
-                        <li>유연한 사용자 역할 관리
-                            - 반려인/펫시터 모드 자유로운 전환 기능
-                            - AsyncStorage를 활용한 사용자 정보 영구 저장</li>
-                        <li>다양한 펫시팅 서비스
-                            - 방문/위탁 펫시팅 예약 시스템
-                            - 간편한 프로필 및 일정 관리</li>
+                        <li>MVP 아키텍처 기반 설계</li>
+                        <li>사용자 모드 전환 시스템 : 한 계정으로 반려인/펫시터 역할을 자유롭게 전환</li>
+                        <li>다양한 펫시팅 서비스 : 방문 펫시팅과 위탁 펫시팅 지원</li>
+                        <li>예약 관리 시스템 : 실시간 예약 상태 업데이트, 예약 확정/취소/변경 지원원</li>
                       </ul>
                     </div>
                     <div><strong>주요 담당 기능:</strong>
                       <ul>
-                        <li>예약 요금 설정 및 결제 시스템 구현
-                            - 펫시터가 설정한 기본 요금과 부가 서비스 요금 관리
-                            - 날짜별 서비스 예약 시스템 개발</li>
-                        <li>서비스 예약 프로세스 개발
-                            - 펫시터/반려인 간 예약 확정 플로우 구현
-                            - 예약 상태 관리 및 알림 시스템 연동</li>
-                        <li>결제 시스템 UI/UX 구현
-                            - 서비스 요금 계산 로직 설계
-                            - 간편한 결제 프로세스 구축</li>
+                        <li>결제 스크린 - 서비스 요금 설정 화면(기본 요금, 추가 요금 등)</li>
+                        <li>예약 취소 바텀시트 모달</li>
+                        <li>날짜별 서비스 수정 스크린</li>
+                        <li>요금 등록 컴포넌트 리팩토링</li>
                       </ul>
                     </div>
-                    <div><strong>개발 환경:</strong> 
-                      Frontend: React Native, TypeScript, MobX State Tree, React Query |
-                      Backend: Node.js, Express, PostgreSQL, Firebase Auth |
-                      DevOps: AWS, Docker, GitHub Actions
+                    <div><strong>프론트엔드 기술 스택택:</strong> 
+                      React Native, TypeScript, MobX State Tree, React Query 
                     </div>
-                    <div><strong>핵심 성과 및 성장 포인트:</strong>
+                    <div><strong>성장 포인트:</strong>
                       <ul>
-                        <li>대규모 프로젝트의 체계적인 아키텍처 경험
-                            - 고도로 모듈화된 컴포넌트 설계 방식 학습
+                        <li>React Native 개발 환경 구축 경험 습득
+                            - 에뮬레이터 설정 및 복잡한 개발 환경 이해
+                            - 모바일 앱 개발 워크플로우 적응
                         </li>
-                        <li>프로페셔널한 개발 프로세스 체득
-                            - 코드 컨벤션과 모듈화 기준 학습
-                            - 체계적인 개발 환경 세팅 경험
+                        <li>대규모 프로젝트 구조 이해 및 적용
+                            - 복잡한 폴더 구조 내에서 일관된 개발 패턴 학습
+                            - 자동화 도구와 커스텀 스크립트 활용 경험
                         </li>
-                        <li>효율적인 협업 문화 경험
-                            - 정기적인 팀 회의를 통한 일정 관리 및 이슈 해결
-                            - 실무 수준의 코드 리뷰 프로세스 경험
+                        <li>실무 수준의 협업 프로세스 경험
+                            - Jira와 GitHub Issue를 통한 체계적인 업무 관리
+                            - 기술 리더의 코드 리뷰를 통한 성장
                         </li>
                       </ul>
                     </div>
