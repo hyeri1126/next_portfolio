@@ -1,9 +1,12 @@
-# 3D Interactive Web Project
+# 프론트엔드 개발자 웹 포트폴리오 | 류혜리
 
-## 📝 프로젝트 개요 및 배경
-평소 2D 웹의 한계를 넘은 3D 요소를 활용한 인터랙티브 웹에 관심이 있어, 콜로소의 초이인 강의를 수강하며 이 프로젝트를 진행했습니다. 3D 모델링부터 웹 구현까지 전체 과정을 경험하며, C4D로 3D 요소를 모델링하고 Three.js로 웹에서 구현했습니다.
-사용자가 3D 공간을 자유롭게 탐색하고 오브젝트와 상호작용할 수 있는 서비스입니다.
-
+## 📝 프로젝트 개요 
+이 포트폴리오 웹사이트는 프론트엔드 개발자로 취업하기 위한 여정과 기술적 역량을 보여주기 위해 Next.js를 기반으로
+개발되었습니다. 기획, 디자인, 개발까지 모든 과정을 직접 수행하였으며, 인터랙티브한 웹 경험을 중점으로 제작하였습니다. <br>
+GSAP의 ScrollTrigger와 Three.js를 활용하여 스크롤에 따라 다양한 애니메이션 효과가 적용되도록 구현하였고,
+모바일부터 데스크톱까지 모든 디바이스에서 최적화된 반응형 인터페이스를 제공합니다.<br>
+개발 과정에서 codegrid 유튜브 채널의 다양한 영상을 참조하여 제 방식으로 재해석하였으며,
+남들과 차별화된 포트폴리오를 만드는 것이 목표였습니다.
 
 ## ✨ 주요 기능
 ### 1. 3D 오브젝트 색상 커스터마이징 시스템
@@ -19,68 +22,19 @@
 ### 4. 반응형 
 
 ## 🛠️ 기술 스택
-**C4D (Cinema 4D)**, 
-**Three.js**,  **GSAP (GreenSock Animation Platform)**, **JavaScript (ES6+)**, **HTML5 & CSS3**,
-**Webpack**, **Git/GitHub**
+Next.js 14 (App Router), CSS Modules, GSAP, Three.js, Swiper, React-Masonry-CSS
 
 
 ## 📋 구현 상세
-### Three.js 기반 3D 렌더링 시스템
-```javascript
-// Scene, Camera, Renderer 초기화
-const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+### 1. GSAP ScrollTrigger 기반 애니메이션
+- 수평 스크롤 갤러리: 프로젝트 섹션에서 수평 스크롤 구현 및 스냅 효과 적용
+- 스크롤 연동 애니메이션: 스크롤 위치에 따른 요소 변형 및 애니메이션 타이밍 제어
+- 패럴랙스 효과: 스크롤 시 여러 레이어가 다른 속도로 움직이는 깊이감 있는 시각 효과
 
-// 렌더러 설정
-renderer.setSize(window.innerWidth, window.innerHeight);
-renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-renderer.shadowMap.enabled = true;
-renderer.shadowMap.type = THREE.PCFSoftShadowMap;
-document.body.appendChild(renderer.domElement);
-
-// OrbitControls 설정
-const controls = new OrbitControls(camera, renderer.domElement);
-controls.enableDamping = true;
-controls.dampingFactor = 0.05;
-controls.screenSpacePanning = false;
-controls.minDistance = 5;
-controls.maxDistance = 50;
-controls.maxPolarAngle = Math.PI / 2;
-```
-
-### Raycaster를 활용한 오브젝트 인터랙션
-
-```javascript
-// Raycaster 초기화
-const raycaster = new THREE.Raycaster();
-const mouse = new THREE.Vector2();
-
-// 마우스 이벤트 리스너
-window.addEventListener('click', (event) => {
-  // 화면 좌표를 정규화된 장치 좌표로 변환
-  mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
-  mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
-  
-  // Raycasting 수행
-  raycaster.setFromCamera(mouse, camera);
-  const intersects = raycaster.intersectObjects(selectableObjects);
-  
-  if (intersects.length > 0) {
-    const object = intersects[0].object;
-    // 선택된 오브젝트 처리
-    selectObject(object);
-  }
-});
-
-// 오브젝트 선택 및 색상 변경 함수
-function selectObject(object) {
-  selectedObject = object;
-  colorPicker.style.display = 'block';
-  // 현재 선택된 오브젝트 하이라이트 처리
-  highlightSelectedObject();
-}
-```
+### 2. Three.js 물결 효과
 
 
 ## 회고
+수평 스크롤 구현
+수평 스크롤 섹션을 구현하는 과정에서 다양한 디바이스의 화면 크기에 맞춰 일관된 경험을 제공하는 것이 어려웠습니다. GSAP의 ScrollTrigger를 활용해 문제를 해결했고, 디바이스 크기에 따른 동적 계산을 통해 최적의 경험을 제공할 수 있었습니다.
+
