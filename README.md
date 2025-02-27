@@ -32,7 +32,7 @@ Next.js 14 (App Router), CSS Modules, GSAP, Three.js, Swiper, React-Masonry-CSS,
 
  
 ### 📂 프로젝트 구조
-단순한 랜딩페이지(정적페이지)이자 원체이지(?)인 만큼 폴더 구조는 단순하다.
+단일페이지라서 폴더 구조는 단순하다.
 ```
 /
 ├── app/                  # Next.js App Router
