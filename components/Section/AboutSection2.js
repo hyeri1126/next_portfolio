@@ -21,16 +21,16 @@ export default function AboutSection() {
     const chars = text.chars;
 
     // 반응형 설정 추가
-    let endValue = window.innerWidth <= 600 ? "+=220%" : "+=100%";
+    let endValue = window.innerWidth <= 600 ? "+=220%" : "+=200%";
 
     // 섹션 고정
     ScrollTrigger.create({
       trigger: section,
-      start: "top top", // 섹션이 화면 중앙에 왔을 때 시작
-      end: endValue, // 스크롤 길이 조정
+      start: "top top",
+      end: "bottom top",
       pin: true,
       pinSpacing: true,
-      direction: "both",
+      markers:true,
     });
     
     // 글자별 애니메이션
@@ -47,7 +47,7 @@ export default function AboutSection() {
         scrollTrigger: {
           trigger: section,
           start: "top top",
-          end: endValue,
+          end: "bottom top",
           scrub: 0.5,
 
         },
@@ -59,7 +59,7 @@ export default function AboutSection() {
       scrollTrigger: {
         trigger: section,
         start: "top top",
-        end: "bottom",
+        end: "bottom top",
         scrub: true,
       },
     });

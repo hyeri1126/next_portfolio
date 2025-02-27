@@ -68,23 +68,21 @@ export default function HorizontalSection(){
               className={styles.slide}
             >
               <div className={styles.title}>
-                <h1 className={styles.grad1}>Project 1</h1>
-                <h1 className={styles.grad1}>Baas 기반 임베디드 금융 서비스</h1>
+                <h1>Project 1</h1>
+                <h1>Baas 기반 임베디드 금융 서비스, 집계사장 </h1>
               </div>
               <div className={styles.desc}>
                 <div className={styles.descLeft}>
                   <div className={styles.descTop}>
-                    우리FIS 클라우드 서비스 개발 교육 과정의 최종 프로젝트로,
-                    <span className={styles.highlight}>팀 프론트엔드 리더</span>로서 프로젝트를 이끌며 개발과 협업을 성공적으로 수행했습니다.  
-                    자산관리에 어려움을 느끼고 회계사 고용 비용 절감을 원하는 소상공인을 위한 <span className={styles.highlight}>통합 비즈니스 관리 플랫폼</span>을 구축했습니다.
-                    프로젝트는 소상공인에 최적화된 직관적인 UI/UX 설계, MSA 기반의 안정적인 시스템 구조, 
-                    그리고 BaaS 기반 금융 API의 효과적인 활용과 서비스 기획력을 인정받아 
-                    <span className={styles.highlight}>우리FIS 교육 1등(최우수상)</span>을 수상했습니다.
+                    <span className={styles.highlight}>집계사장</span>은 자산/직원 관리와 회계 업무에 어려움을 겪는 소상공인/자영업자를 위한 <span className={styles.highlight}>비즈니스 통합 관리 플랫폼</span>입니다. 
+                      이 프로젝트는 소상공인에 최적화된 직관적인 UI/UX 설계, MSA 기반의 안정적인 시스템 구조, 
+                      그리고 BaaS 기반 금융 API의 효과적인 활용과 서비스 기획력을 인정받아 
+                    <span className={styles.highlight}>우리FISA 3기 최우수 프로젝트</span>로 선정되었습니다다.
                   </div>
                   <div className={styles.descDetail}>
                     <div><strong>작업 기간:</strong> 2024년 10월 ~ 12월 (2개월)</div>
                     <div><strong>팀 구성: </strong> 6명 (백엔드/아키텍처/프론트엔드 리더 각 1명, 풀스택 개발자 3명) </div>
-                    <div><strong>기여도: </strong> 프론트엔드 개발 90%, 프론트엔드 팀 리드 </div>
+                    <div><strong>기여도: </strong>  프론트엔드 팀 리드, 프론트엔드 개발 90% </div>
                     <div><strong>프로젝트 핵심 기능:</strong>
                         <ul>
                             <li>MSA 아키텍처 기반의 시스템 설계</li>
@@ -94,27 +92,20 @@ export default function HorizontalSection(){
                     </div>
                     <div><strong>주요 담당 기능:</strong>
                       <ul>
-                          <li>Next.js API Routes를 활용한 JWT 토큰 관리로 보안성 강화
-                              - 백엔드 직접 통신을 차단하고 서버 사이드에서 토큰 관리</li>
-                          <li>4단계 인증 프로세스의 효율적 상태 관리
-                              - Context를 활용한 전역 상태 관리로 복잡한 인증 플로우 최적화</li>
-                          <li>재사용 가능한 공통 컴포넌트 설계
-                              - 팀 내 개발 생산성 향상을 위한 컴포넌트 라이브러리 구축</li>
-                          <li>백엔드 통신 로직 모듈화
-                              - API 통신 구조 설계 및 상태 관리 패턴 정립으로 협업 효율성 증대</li>
+                          <li>Next.js API Routes를 활용한 JWT 토큰 관리로 보안성 강화</li>
+                          <li>복잡한 4단계 인증 플로우 최적화</li>
+                          <li>재사용 가능한 공통 컴포넌트 설계</li>
+                          <li>캘린더 기반 직원 출퇴근 관리 UI 구현 - 직관적인 조회/수정/삭제 </li>
                       </ul>
                     </div>
-                    <div><strong>개발 환경:</strong> 
-                      Frontend: Next.js, React, Google Maps, NPM |
-                      Backend: Spring Boot, MySQL, Redis, JWT, MSA |
-                      Testing: Cypress, JMeter |
-                              DevOps: AWS, Docker, Jenkins
+                    <div><strong>기술 스택(Frontend):</strong>
+                      Next.js, React, Context API, Axios, CSS Modules, Cypress
                     </div>
-                    <div><strong>핵심 성과 및 성장 포인트:</strong> 
+                    <div><strong>성장 포인트:</strong> 
                       <ul>
-                          <li>MSA 기반 대규모 프로젝트에서 프론트엔드 파트 리딩</li>
-                          <li>BaaS 기반 금융 서비스 개발을 통한 도메인 지식 습득</li>
-                          <li>다양한 직군(백엔드, 아키텍트)과의 협업 능력 강화</li>
+                        <li>처음으로 프론트엔드 리드를 맡아 팀 코드 컨벤션과 개발 환경 구축 경험</li>
+                        <li>프로젝트 중반 팀원들을 설득해 리팩토링을 진행하면서 개발 효율 향상 및 코드 품질 개선</li>
+                        <li>생소했던 BaaS와 MSA 구조를 팀원들과 깊게 고민하고 기술을 공유하며 함께 성장</li>
                       </ul>
                     </div>
                   
@@ -151,39 +142,27 @@ export default function HorizontalSection(){
               className={styles.slide}
             >
               <div className={`${styles.title} `}>
-                <h1 className={styles.grad}>Project 2</h1>
-                <h1 className={styles.grad}>3D 인터랙티브 웹 구현</h1>
+                <h1>Project 2</h1>
+                <h1>3D 인터랙티브 웹 구현</h1>
               </div>
               <div className={styles.desc}>
                 <div className={styles.descLeft}>
                   <div className={styles.descTop}>
-                    평소 2D 웹의 한계를 넘은 3D 요소를 활용한 인터랙티브 웹에 대한 관심을 바탕으로, <span className={styles.highlight}>콜로소의 초이인 강의</span>를 수강하며 해당 프로젝트를 진행하였습니다. 
+                    Three.js와 GSAP를 활용한 3D 인터랙티브 웹 프로젝트로,
+                    평소 3D 요소를 활용한 인터랙티브 웹에 대한 관심을 바탕으로, <span className={styles.highlight}>콜로소의 초이인 강의</span>를 수강하며 해당 프로젝트를 진행하였습니다. 
                     강의를 통해 <span className={styles.highlight}>디자이너의 관점</span>에서 3D 모션 그래픽을 이해하고,
                     <span className={styles.highlight}>개발자의 시각</span>에서 이를 웹에 구현하는 과정을 통해
                     3D 인터랙티브 웹 제작에 한걸음 다가갈 수 있었습니다.
-                    특히 처음 다뤄보는 C4D로 3D 모델을 직접 제작하고 Three.js로 그래픽 애니메이션을 구현하는 체계적인 과정을 바탕으로
-                    웹 개발의 새로운 기술 역량을 습득할 수 있었습니다. 
                   </div>
                   <div className={styles.descDetail}>
                     <div><strong>작업 기간:</strong> 2023년 12월 ~ 2024년 2월 (3개월)</div>
-                    <div><strong>팀 구성:</strong> 개인 프로젝트 (기여도 100%)</div>
+                    <div><strong>팀 구성:</strong> 개인 프로젝트 </div>
                     <div><strong>프로젝트 핵심 기능:</strong> 
                       <ul>
-                        <li>3D 오브젝트 색상 커스터마이징 시스템</li>
-                        <li>다양한 시점의 3D 공간 탐색 기능</li>
-                        <li>인터랙티브한 파티클 배경 효과</li>
-                      </ul>
-                    </div>
-                    <div><strong>핵심 구현 기능:</strong>
-                      <ul>
-                        <li>Three.js 기반 3D 렌더링 시스템 구축
-                            - PerspectiveCamera와 OrbitControls로 다양한 시점 제어 구현</li>
-                        <li>Raycaster를 활용한 오브젝트 인터랙션
-                            - 3D 오브젝트 선택 및 색상 커스터마이징 기능 개발</li>
-                        <li>GSAP 기반 애니메이션 시스템
-                            - 부드러운 카메라 전환과 UI 모션 구현</li>
-                        <li>Three.js Particle System 활용
-                            - 동적인 배경 파티클 효과로 몰입감 향상</li>
+                        <li>3D 오브젝트 색상 커스터마이징 시스템 - Raycaster, Color Picker 활용</li>
+                        <li>PerspectiveCamera와 OrbitControls를 활용한 3D 공간의 다양한 시점 제어</li>
+                        <li>3D 파티클 배경 효과</li>
+                        <li>반응형 디자인 적용</li>
                       </ul>
                     </div>
                     <div><strong>개발 환경:</strong>
@@ -193,11 +172,18 @@ export default function HorizontalSection(){
                     </div>
                     <div><strong>핵심 성과 및 성장 포인트:</strong>
                       <ul>
-                        <li>3D 모델링부터 웹 구현까지 전체 제작 과정 경험</li>
-                        <li>Three.js를 활용한 웹 3D 그래픽스 구현 역량 확보</li>
-                        <li>인터랙티브 웹 개발을 위한 기술적 기반 마련</li>
+                        <li>3D 인터랙티브 웹 전체 개발 파이프라인 경험</li>
+                        <li>Three.js 라이브러리 활용 역량 증진</li>
                       </ul>
                     </div>
+                    <div ><strong>링크:</strong>
+                      <div className={styles.linkContainer}>
+                        <div><a href="https://hyeri1126.github.io/hyeri-s-interactive-3d-web/" target="_blank">프로젝트 바로가기 ↗️</a></div>
+                        <div><a href="https://hyerilog.tistory.com/156" target="_blank">개발 블로그 ↗️</a></div>
+                        <div><a href="https://github.com/hyeri1126/3D_Interactive_Web" target="_blank">GitHub ↗️</a></div>
+                      </div>
+                    </div>
+                  
                   </div>
                 </div>
                 
@@ -205,13 +191,13 @@ export default function HorizontalSection(){
                   <div className={styles.imgBox2}>
                     <div className={styles.videoTitle}>프로젝트 시연 영상을 통해 서비스를 직접 체험해보세요:) </div>
                     <div className={styles.videoBox}>
-                      <div className={styles.videoOverlay}>
+                      {/* <div className={styles.videoOverlay}>
                         <div className={styles.linkContainer}>
                           <div><a href="https://hyeri1126.github.io/hyeri-s-interactive-3d-web/" target="_blank">프로젝트 바로가기 ↗️</a></div>
                           <div><a href="https://hyerilog.tistory.com/156" target="_blank">개발 블로그 ↗️</a></div>
                           <div><a href="https://github.com/hyeri1126/3D_Interactive_Web" target="_blank">GitHub ↗️</a></div>
                         </div>
-                      </div>
+                      </div> */}
                       <iframe 
                         width="560" 
                         height="315" 
@@ -235,7 +221,7 @@ export default function HorizontalSection(){
             >
               <div className={styles.title}>
                 <h1>Project 3</h1>
-                <h1>펫시터 플랫폼 - 케어기버</h1>
+                <h1>펫시터 플랫폼, 케어기버</h1>
               </div>
               <div className={styles.desc}>
                 <div className={styles.descLeft}>

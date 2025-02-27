@@ -9,26 +9,17 @@
 
 .about {
     width: 100%;
-    height: 100vh;
+    height: 105vh;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 2rem;
-    /* background-color: #f1f1f1; */
-    /* background-color: black; */
-    /* background-color: white; */
-    /* font-family: '양진체'; */
     font-family: 'NEXON Lv2 Gothic';
-    /* font-family: 'Freesentation-9Black'; */
-
     font-weight: 900;
-
-    /* text-align: center; */
     overflow-y:hidden;
-    /* background-image: url('../../public/images/marquee/img9.jpg'); */
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     position:relative;
   }
   
@@ -70,7 +61,6 @@
     z-index: 1;
   }
   .content {
-    font-size: 1.5vw;
     line-height: 1.2;
     font-weight: 600;
     word-break: keep-all;
@@ -80,8 +70,10 @@
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 5px rgba(0, 0, 0, 0.5);
 
   }
-
-    .highlight {
+  .mainText{
+    font-size: 30px;
+  }
+  .highlight {
     /* width: 100%; */
     display: flex !important; 
     flex-direction: column !important;
@@ -93,16 +85,15 @@
   }
   
   .desc {
-    color: #333; /* 기본 글자 색 */
-    font-size: 1.3vw; /* 강조된 글자 크기 */
-    font-weight: bold; /* 글씨 두께 */
-    text-align: center; /* 텍스트 중앙 정렬 */
-    /* background-color: rgba(255, 193, 7, 0.4);  */
+    color: #333; 
+    font-size: 25px; 
+    font-weight: bold; 
+    text-align: center; 
     background-color: rgb(245, 245, 245, 0.3);
-    padding: 1rem 1.5rem; /* 안쪽 여백 */
-    margin: 0.5rem 0; /* 요소 간 간격 */
-    border-radius: 13px; /* 모서리 둥글게 */
-    transition: transform 0.3s ease, background-color 0.3s ease; /* 부드러운 효과 */
+    padding: 1rem 1.5rem; 
+    margin: 0.5rem 0;
+    border-radius: 13px; 
+    transition: transform 0.3s ease, background-color 0.3s ease; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     display: inline-block; 
     width: auto; 
