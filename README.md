@@ -1,5 +1,5 @@
 # 프론트엔드 개발자 웹 포트폴리오 | 류혜리
-<img src="public/images/gif/3dinteractive.gif" width="550"></img>
+<img src="public/images/gif/nextportfolio.gif" width="550"></img>
 
 ## 📝 프로젝트 개요 
 이 포트폴리오 웹사이트는 프론트엔드 개발자로 취업하기 위한 여정과 기술적 역량을 보여주기 위해 Next.js를 기반으로
