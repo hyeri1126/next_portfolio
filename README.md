@@ -17,14 +17,8 @@
 - Three.js의 Particle System 적용, 사용자 마우스 움직임에 반응
 
 ## 🛠️ 기술 스택
-
-### 3D 모델링 
-**C4D (Cinema 4D)**
-
-### 프론트엔드 개발
-**Three.js**,  **GSAP (GreenSock Animation Platform)**, **JavaScript (ES6+)**, **HTML5 & CSS3**
-
-### 개발 환경 및 도구
+**C4D (Cinema 4D)**, 
+**Three.js**,  **GSAP (GreenSock Animation Platform)**, **JavaScript (ES6+)**, **HTML5 & CSS3**,
 **Webpack**, **Git/GitHub**
 
 
