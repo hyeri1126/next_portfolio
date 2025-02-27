@@ -33,6 +33,7 @@ Next.js 14 (App Router), CSS Modules, GSAP, Three.js, Swiper, React-Masonry-CSS,
  
 ### 📂 프로젝트 구조
 단순한 랜딩페이지(정적페이지)이자 원체이지(?)인 만큼 폴더 구조는 단순하다.
+```
 /
 ├── app/                  # Next.js App Router
 │   ├── layout.js         # 루트 레이아웃
@@ -46,6 +47,7 @@ Next.js 14 (App Router), CSS Modules, GSAP, Three.js, Swiper, React-Masonry-CSS,
 │   └── fonts/            # 폰트 파일
 
 /
+```
 
 ## 회고
 몇 일이면 완성할 수 있었던 포트폴리오였지만, 나만의 개성이 담기고 반응형 완성도를 높이기 위해 수십번의 수정을 거쳐야 했다. 특히, 여러 가지 섹션에 적용된 GSAP 기능들이 서로 영향을 주고 받으며 예상치 못한 문제를 일으키는 상황이 자주 발생했다. ScrollTrigger의 기능 충돌과 반응형을 적용하기 위해서 며칠 동안 하루에 15시간씩 매달로 작업했다. 
