@@ -1,4 +1,5 @@
 # 프론트엔드 개발자 웹 포트폴리오 | 류혜리
+<img src="public/images/gif/3dinteractive.gif" width="550"></img>
 
 ## 📝 프로젝트 개요 
 이 포트폴리오 웹사이트는 프론트엔드 개발자로 취업하기 위한 여정과 기술적 역량을 보여주기 위해 Next.js를 기반으로
@@ -8,24 +9,12 @@ GSAP의 ScrollTrigger와 Three.js를 활용하여 스크롤에 따라 다양한 
 개발 과정에서 codegrid 유튜브 채널의 다양한 영상을 참조하여 제 방식으로 재해석하였으며,
 남들과 차별화된 포트폴리오를 만드는 것이 목표였습니다.
 
-## ✨ 주요 기능
-### 1. 3D 오브젝트 색상 커스터마이징 시스템
-- 사용자가 3D 오브젝트를 선택하고 원하는 색상으로 변경
-- Raycaster를 활용한 오브젝트 선택, Color Picker UI와 연동하여 색상 변경 가능 적용
-
-### 2. 3D 공간 탐색 기능
-- PerspectiveCamera와 OrbitControls를 활용한 다양한 시점 제어
-
-### 3. 3D 인터랙티브 파티클 배경 효과
-- Three.js의 Particle System 적용, 사용자 마우스 움직임에 반응
-
-### 4. 반응형 
 
 ## 🛠️ 기술 스택
 Next.js 14 (App Router), CSS Modules, GSAP, Three.js, Swiper, React-Masonry-CSS
 
 
-## 📋 구현 상세
+## ✨ 주요 기능
 ### 1. GSAP ScrollTrigger 기반 애니메이션
 - 수평 스크롤 갤러리: 프로젝트 섹션에서 수평 스크롤 구현 및 스냅 효과 적용
 - 스크롤 연동 애니메이션: 스크롤 위치에 따른 요소 변형 및 애니메이션 타이밍 제어
@@ -33,6 +22,7 @@ Next.js 14 (App Router), CSS Modules, GSAP, Three.js, Swiper, React-Masonry-CSS
 
 ### 2. Three.js 물결 효과
 
+### 3. 반응형 디자인 적용
 
 ## 회고
 수평 스크롤 구현
