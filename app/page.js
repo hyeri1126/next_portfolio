@@ -4,7 +4,6 @@ import { useRef } from "react";
 import IntroSection2 from "@/components/Section/IntroSection2";
 import SkillSection from "@/components/Section/SkillSection";
 import HorizontalSection from "@/components/Section/HorizontalSection";
-// import HorizontalSection from "@/components/Section/HorizontalSection2";
 import MarqueeSection from "@/components/Section/MarqueeSection";
 import AboutSection from "@/components/Section/AboutSection2";
 import ProjectIntroSection from "@/components/Section/ProjectIntroSection";
@@ -38,7 +37,6 @@ export default function Home() {
         </div>
         <SkillSection />
         <ProjectIntroSection />
-        {/* <HorizontalSection /> */}
         <HorizontalSection />
         <PublishingSection />
         <MarqueeTextSection  ref={marqueeRef}/>
