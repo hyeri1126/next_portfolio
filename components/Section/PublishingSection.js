@@ -14,9 +14,7 @@ export default  function PublishingSection(){
   const items = [
     { img: '/images/kitty1.jpg', title: 'GeeBlock Web', desc: '처음으로 외주를 받아 작업한 퍼블리싱 작품, GeeBlock 블록체인 회사의 랜딩페이지 작업' },
     { img: '/images/gif/portfolio.gif', title:"Frontend Web Porfolio", desc: '현재 포트폴리오 이전 처음으로 제작한 웹 포트폴리오' },
-    { img: '/images/gif/3dscroll.gif', title: '3D Interactive Web', desc:'스크롤에 의해 반응하는 3D 모델링(캔) 작업' },
-    { img: '/images/gif/3dscroll.gif', title: '3D Interactive Web', desc:'스크롤에 의해 반응하는 3D 모델링(캔) 작업' },
-
+    { img: '/images/gif/3dscroll.gif', title: '3D Interactive Web', desc:'스크롤에 의해 반응하는 3D 모델링(캔) 작업' }
   ];
 
 

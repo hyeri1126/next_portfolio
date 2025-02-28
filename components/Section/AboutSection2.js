@@ -30,7 +30,6 @@ export default function AboutSection() {
       end: "bottom top",
       pin: true,
       pinSpacing: true,
-      markers:true,
     });
     
     // 글자별 애니메이션

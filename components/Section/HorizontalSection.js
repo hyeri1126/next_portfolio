@@ -222,7 +222,7 @@ export default function HorizontalSection(){
                   <div className={styles.descTop}>
                       케어기버는 반려견을 홀로 두고 외출하기 어려운 반려인들의 고민을 해결하고자 시작된 프로젝트로, <span className={styles.highlight}>반려인들을 위한 펫시터 매칭 플랫폼</span>입니다. 
                       누구나 쉽게 펫시터가 될 수 있으며 반려인은 펫시터에게 펫시팅(방문/위탁)을 맡기고 마음 편하게 외출할 수 있습니다.
-                      특히 사용자는는 상황에 따라 반려인/펫시터 모드를 자유롭게 전환할 수 있어, 서비스 제공자와 이용자 모두가 될 수 있는 유연한 플랫폼입니다.
+                      특히 사용자는 상황에 따라 반려인/펫시터 모드를 자유롭게 전환할 수 있어, 서비스 제공자와 이용자 모두가 될 수 있는 유연한 플랫폼입니다.
                   </div>
                   <div className={styles.descDetail}>
                     <div><strong>작업 기간:</strong> 2023년 5월 ~ 2023년 11월 (7개월)</div>

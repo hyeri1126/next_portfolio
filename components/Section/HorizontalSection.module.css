@@ -76,9 +76,7 @@
 .highlight {
   color: #fff;
   font-weight: 600; 
-  /* 또는 원하는 색상으로 */
   color: #64B5F6;
-  /* color: #90CAF9; /* 밝은 파란색 */
 }
 
 .descDetail {
@@ -152,7 +150,7 @@
 
 .videoTitle {
   position: absolute;
-  top: 90px;  
+  top: 50px;  
   left: 0;
   color: rgb(255, 255, 255, 0.9);
   font-size: 1.3rem;
