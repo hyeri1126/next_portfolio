@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 프론트엔드 개발자 웹 포트폴리오 | 류혜리
+<img src="public/images/gif/nextportfolio.gif" width="550"></img>
 
-## Getting Started
+### <a href="https://hyeri-front-portfolio.vercel.app" style="color: inherit; text-decoration: none;">포트폴리오 보러가기</a>
 
-First, run the development server:
+## 📝 프로젝트 개요 
+이 포트폴리오 웹사이트는 프론트엔드 개발자로 취업하기 위하여 그동안 습득한 기술 역량과 여정을 보여주기 위해 Next.js를 기반으로
+개발되었습니다. 기획, 디자인, 개발까지 모든 과정을 직접 수행하였으며, 사용자들이 보시기에 지루하지 않도록 인터랙티브한 요소들을 중점으로 제작하였습니다. <br>
+GSAP의 ScrollTrigger와 Three.js를 활용하여 스크롤에 따라 다양한 애니메이션 효과(패럴랙스 효과, 수평 스크롤 갤러리, 텍스트 나타나기)가 적용되도록 구현하였고,
+모바일부터 데스크톱까지 모든 디바이스에서 접근할 수 있도록 반응형 인터페이스를 적용했습니다.<br>
+평소 영감을 많이 받은 codegrid 유튜브 채널의 웹 인터랙션 기법들을 을 참조하여 제 방식으로 재해석하며, 남들과 차별화된 포트포리오를 
+만들어 채용 담당자에게 좋은 인상을 주기 위해 노력했습니다. 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+## 🛠️ 기술 스택
+Next.js 14 (App Router), CSS Modules, GSAP, Three.js, Swiper, React-Masonry-CSS, Vercel
+
+
+## ✨ 주요 기능
+### 1. GSAP ScrollTrigger 기반 애니메이션
+- 수평 스크롤 갤러리: 프로젝트 섹션에서 수평 스크롤 구현 및 스냅 효과 적용
+- 스크롤 연동 애니메이션: 스크롤 위치에 따른 요소 변형 및 애니메이션 타이밍 제어(인트로/프로젝트/소개 섹션 등에 적용)
+- 패럴랙스 효과: 여러 레이어가 다른 속도로 움직이면서 깊이감/몰입감 제공
+- timeline 애니메이션 : 인트로 섹션에 순차적으로 요소가 나타남. 
+
+### 2. Three.js 물결 효과
+- 사용자 마우스 움직임에 따라 물결 효과가 나타는 애니메이션
+- 인트로 섹션의 배경에 적용
+
+### 3. 반응형 디자인 적용
+- cSS Grid & Flexbox, 미디어 쿼리 적용
+
+ 
+### 📂 프로젝트 구조
+단일페이지라서 폴더 구조는 단순하다.
+```
+/
+├── app/                  # Next.js App Router
+│   ├── layout.js         # 루트 레이아웃
+│   ├── page.js           # 홈페이지
+│   ├── globals.css       # 전역으로 적용되는 css 파일
+├── components/           # 재사용 가능한 컴포넌트
+│   ├── animations/       # 애니메이션 관련 컴포넌트
+│   ├── sections/         # 섹션별로 컴포넌트 관리
+├── public/               # 정적 파일
+│   ├── images/           # 이미지 에셋
+│   └── fonts/            # 폰트 파일
+
+/
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 💡 회고
+몇 일이면 완성할 수 있었던 포트폴리오였지만, 나만의 개성이 담기고 반응형 완성도를 높이기 위해 수십번의 수정을 거쳐야 했다. 특히, 여러 가지 섹션에 적용된 GSAP 기능들이 서로 영향을 주고 받으며 예상치 못한 문제를 일으키는 상황이 자주 발생했다. ScrollTrigger의 기능 충돌과 반응형을 적용하기 위해서 며칠 동안 하루에 15시간씩 매달려 작업했다. 
+<br>이렇게 긴 시간동안 작업이 전혀 지루하게 느껴지지않고 몰두하는 과정에서 개발자에 대한 가능성과 역량을 스스로 더 확실하게 알 수 있었고, 프론트엔드 개발자로 삶을 살아간다는 것이 나에게 있어 얼마나 간절한지 깨닫게 되었다. 뿐만 아니라 포트폴리오에 들어가는 내용들을 수십번 고치고 정리하면서 개발과 나자신에 대한 가치관을 재확립할 수 있었고, 부족했던 기술력과 다시 공부하고 싶었던 프로젝트들을 재점검하며 성장을 느꼈다. <br>
+평소 시청만 했던 codegrid 채널 기술들을 실제로 적용해보면서, HTML, CSS, JavaScript를 Next.js 환경에 맞게 컴포넌트로 재구성하는 과정이 매우 재밌게 느껴졌다. 어쨌든 결과적으로 나의 취향이 듬뿍 남긴 애정가는 웹사이트가 완성되어 큰 보람을 느꼈다. 이 포트폴리오가 다른 신입 개발자들에게는 영감을 주고, 채용 담당자에게는 나의 열정과 기술력을 효과적으로 전달되기를 깊이 바란다. 
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
