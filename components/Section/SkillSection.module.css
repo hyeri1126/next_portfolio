@@ -218,12 +218,12 @@
 @media (max-width: 1000px) {
     .siteTitle {
         top:15px;
-        font-size: 5vw;
-        height: 6.2vw;
+        font-size: 6vw;
+        height: 6.4vw;
         border-bottom: 0.6vw solid black;
     }
     .num{
-        font-size: 4.5vw;
+        font-size: 5.5vw;
         left: 20px;
         top: 20px;
     }
@@ -279,10 +279,22 @@
 }
 
 @media (max-width:600px){
-    .infoText{
-        font-size: 13px;
-    }
-    .s1 { top: 75px; }
-    .s2 { top: 100px; }
-    .s3 { top: 125px; }
+  .infoText{
+      font-size: 13px;
+  }
+  .s1 { top: 55px; }
+  .s2 { top: 105px; }
+  .s3 { top: 155px; }
+    
+  .siteInner{
+    padding: 0 10px 20px 10px;
+  }
+  .imgBox2{
+    width: 150px;
+    height: 80px;
+  }
+  .imgBox3{
+    width: 150px;
+    height: 70px;
+  }
 }
