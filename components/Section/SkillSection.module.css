@@ -50,10 +50,6 @@
 
 .siteItem {
     height: 70vh;
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* flex-direction: column; */
     position: sticky;
     left: 0;
     border-radius: 22px;
@@ -62,31 +58,21 @@
 
 .s1 {
     background-color: #BFC0C0;
-    background-size: cover;
     top: 110px;
 }
 
 .s2 {
-    background-color:  #FC9657;
     background-color: #FFD97D;
-    background-size: cover;
     top: 200px;
 }
 
 .s3 {
-    background-color:#A58CCE;
-    background-color: #4F5D75;
     background-color: #D3E4CD;  
-    background-size: cover;
     top: 290px;
 }
 
 .s4 {
-    background-color: #6AC1DB;
     background-color: #EF8354 ;
-  
-    background-size: cover;
-    overflow: hidden;
 }
 
 .num {
@@ -218,8 +204,8 @@
 @media (max-width: 1000px) {
     .siteTitle {
         top:15px;
-        font-size: 6vw;
-        height: 6.4vw;
+        font-size: 5.5vw;
+        height: 6.7vw;
         border-bottom: 0.6vw solid black;
     }
     .num{
@@ -237,9 +223,6 @@
 
     .s3 {
         top: 205px;
-    }
-    .num{
-        font-size: 5vw;
     }
     .skillContent{
       flex-direction: column;
@@ -279,6 +262,10 @@
 }
 
 @media (max-width:600px){
+  .siteTitle {
+    font-size: 6vw;
+    height: 7.2vw;
+  }
   .infoText{
       font-size: 13px;
   }

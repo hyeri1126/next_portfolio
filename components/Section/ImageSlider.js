@@ -10,8 +10,8 @@ import "swiper/css/pagination";
 export default function ImageSlider(){
   console.log("ImageSlider component loaded");
   const images = [
-    '/images/projects/project3_main.png',
     '/images/projects/caregiver3.webp',
+    '/images/projects/project3_main.png',
     '/images/projects/caregiver2.webp',
     '/images/projects/caregiver3.png',
     // Add more images as needed
@@ -36,13 +36,6 @@ export default function ImageSlider(){
           {images.map((image, index) => (
             <SwiperSlide key={index}>
               <div className={styles.slideImageContainer}>
-                <div className={styles.videoOverlay}>
-                  <div className={styles.linkContainer}>
-                    <div><a href="https://github.com/프로젝트3레포지토리" target="_blank">GitHub ↗️</a></div>
-                    <div><a href="https://hyerilog.tistory.com/" target="_blank">개발 블로그 ↗️</a></div>
-                    <div><a href="https://프로젝트URL" target="_blank">웹사이트 바로가기 ↗️</a></div>
-                  </div>
-                </div>
                 <img src={image} alt="" className={styles.img} />
               </div>
             </SwiperSlide>       

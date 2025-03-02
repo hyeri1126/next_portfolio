@@ -10,6 +10,7 @@ import ProjectIntroSection from "@/components/Section/ProjectIntroSection";
 import PublishingSection from "@/components/Section/PublishingSection";
 import MarqueeTextSection from "@/components/Section/MarqueeTextSection";
 import ContactSection from "@/components/Section/ContactSecion";
+import MobileProjects from "@/components/Section/MobileProjects";
 
 export default function Home() {
   const marqueeRef = useRef(null);
@@ -27,8 +28,17 @@ export default function Home() {
 
     window.scrollTo(0, 0);
 
-    return () => {
-      window.history.scrollRestoration = "auto"; // 기본 동작 복원
+      
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 600);
+    };
+    
+    window.addEventListener('resize', handleResize);
+      
+
+    return () => {// 기본 동작 복원
+      window.removeEventListener('resize', handleResize);
+
     };
   }, []);
 
@@ -43,7 +53,7 @@ export default function Home() {
         </div>
         <SkillSection />
         <ProjectIntroSection />
-        <HorizontalSection />
+        {isMobile ? <MobileProjects /> : <HorizontalSection />}
         <PublishingSection />
         {!isMobile && <MarqueeTextSection ref={marqueeRef} />}
         <ContactSection marqueeRef={isMobile ? null : marqueeRef} />

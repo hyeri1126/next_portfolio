@@ -117,9 +117,8 @@ export default function HorizontalSection(){
                     <div className={styles.videoBox}>
                       <div className={styles.videoOverlay}>
                         <div className={styles.linkContainer}>
-                          <div><a href="https://hyeri1126.github.io/hyeri-s-interactive-3d-web/" target="_blank">프로젝트 바로가기 ↗️</a></div>
-                          <div><a href="https://hyerilog.tistory.com/156" target="_blank">개발 블로그 ↗️</a></div>
-                          <div><a href="https://github.com/hyeri1126/3D_Interactive_Web" target="_blank">GitHub ↗️</a></div>
+                          <div><a href="https://jg-sajang.vercel.app/onboarding" target="_blank">프로젝트 바로가기 ↗️</a></div>
+                          <div><a href="https://github.com/hyeri1126/MSA-FE" target="_blank">GitHub ↗️</a></div>
                         </div>
                       </div>
                       <iframe 
@@ -329,9 +328,8 @@ export default function HorizontalSection(){
                     <div className={styles.imageContainer}>
                       <div className={styles.videoOverlay}>
                         <div className={styles.linkContainer}>
-                          <div><a href="https://github.com/hyeri1126/portfolio" target="_blank">GitHub ↗️</a></div>
-                          <div><a href="https://hyerilog.tistory.com/" target="_blank">개발 블로그 ↗️</a></div>
-                          <div><a href="https://포트폴리오URL" target="_blank">웹사이트 바로가기 ↗️</a></div>
+                          <div><a href="https://github.com/hyeri1126/next_portfolio" target="_blank">GitHub ↗️</a></div>
+                          <div><a href="https://next-portfolio-hyeri.vercel.app" target="_blank">웹사이트 바로가기 ↗️</a></div>
                         </div>
                       </div>
                       <div className={styles.gifBox}>
