@@ -227,7 +227,7 @@
 @media (max-width:900px){
     .introText{
         width: 80%;
-        font-size: 3vw;
+        font-size: 12px;
     }
     .nav{
         font-size: 3vw;

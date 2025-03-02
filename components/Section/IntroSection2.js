@@ -7,8 +7,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { WaterEffect } from "../Animations/WaterEffect";
 
 export default function IntroSection2(){
+    const [isMobile, setIsMobile] = useState(false) 
     const [step, setStep] = useState(0);
-    const [backgroundImage, setBackgroundImage] = useState("/images/black2.jpg");
    
     const firstText = "Hyeri's";
     const secondText = ['S', 'T', ' ', 'R', 'I', 'E', 'S'];
@@ -17,7 +17,7 @@ export default function IntroSection2(){
 
       // 초기 로드 시에만 화면 크기 확인
       if (window.innerWidth < 600) {
-        setBackgroundImage("/images/black1.jpg");
+        setIsMobile(true);
       }
 
       // 스크롤 비활성화
@@ -117,10 +117,25 @@ export default function IntroSection2(){
             <section className={styles.hero}>
 
                 <div id="water-effect-container" className={styles.waterEffectContainer}>
-                    <WaterEffect 
+                    {isMobile ? (
+                      <div
+                        style={{
+                          backgroundImage: `/images/black1.jpg`,
+                          backgroundSize: 'cover',
+                          backgroundPosition: 'center',
+                          width: '100%',
+                          height: '100%',
+                          position: 'absolute'
+                        }}
+                      >
+                      </div>
+                    ) : (
+                      <WaterEffect 
                         containerId="water-effect-container" 
-                        backgroundImage={backgroundImage}  
-                    />
+                        backgroundImage="/images/black2.jpg"  
+                      />
+                    )}
+                 
                     <h1 className={styles.title}>
                         <div className={styles.textWrapper}>
                         {firstText.split('').map((char, index) => (
