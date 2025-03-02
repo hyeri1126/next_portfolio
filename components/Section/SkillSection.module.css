@@ -30,7 +30,7 @@
 
 .siteTitle {
     position: sticky;
-    top: 0px;
+    top: 5px;
     left: 16px;
     width: 70%;
     height: 5vw;
@@ -63,14 +63,14 @@
 .s1 {
     background-color: #BFC0C0;
     background-size: cover;
-    top: 130px;
+    top: 110px;
 }
 
 .s2 {
     background-color:  #FC9657;
     background-color: #FFD97D;
     background-size: cover;
-    top: 270px;
+    top: 200px;
 }
 
 .s3 {
@@ -78,7 +78,7 @@
     background-color: #4F5D75;
     background-color: #D3E4CD;  
     background-size: cover;
-    top: 410px;
+    top: 290px;
 }
 
 .s4 {
@@ -113,7 +113,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 50px;
+    padding-left: 20px;
 }
 
 .logoBox{
@@ -133,7 +133,6 @@
 .logoBox3{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    padding-top: 50px;
 }
 .logoBox4{
     display: grid;
@@ -170,77 +169,51 @@
     align-items: center;
 }
 .infoText{
-    width: 60%;
+    width: 70%;
     font-family: 'Pretendard-Regular';
     font-size: 20px;
-    /* font-weight: 600; */
     /* font-family: 'NEXON Lv2 Gothic'; */
 
 }
 
-/* .info {
-    position: absolute;
-    left: 0;
-    bottom: 3%;
-    width: 98%;
-    margin-left: 1%;
-    border-top: 1px solid var(--black);
-    border-bottom: 1px solid var(--black);
-    display: flex;
-    justify-content: space-between;
-} */
 
 
-@media (max-width:1700px){
-    .infoText{
-        width: 80%;
-    }
-    .logoBox2{
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-}
-@media (max-width:1500px) {
+@media (max-width:1600px) {
     .siteTitle{
         top: 30px;
     }
     .infoText{
-        font-size: 23px;
+        width: 90%;
+        font-size: 18px;
     }
     .s1 {
-        top: 120px;
+        top: 100px;
     }
 
     .s2 {
-        top: 250px;
+        top: 160px;
     }
 
     .s3 {
-        top: 380px;
-    }
-   
-    .imgBox{
-        width: 130px;
-        height: 130px;
+        top: 220px;
     }
     .num{
         font-size: 4vw;
     }
-    .imgBox3{
-        width: 280px;
+    .imgBox{
+        width: 120px;
         height: 120px;
+    }
+    .imgBox2{
+        width: 250px;
+        height: 140px;
+    }
+    .imgBox3{
+        width: 200px;
+        height: 130px;
     }
 }
 
-@media (max-width:1300px){
-    .infoText{
-        font-size: 23px;
-    }
-    .imgBox2{
-        width: 330px;
-        height: 150px;
-    }
-}
 
 @media (max-width: 1000px) {
     .siteTitle {
@@ -259,127 +232,57 @@
     }
 
     .s2 {
-        top: 225px;
+        top: 145px;
     }
 
     .s3 {
-        top: 360px;
-    }
-
-
-    .info {
-        flex-direction: column;
-        width: 90%;
-        margin-left: 5%;
-        padding: 5px 0;
-    }
-    .infoText{
-        font-size: 20px;
-        width: 90%;
-    }
-    .logoBox{
-        gap: 10px;
-    }
-    .imgBox{
-        width: 100px;
-        height: 100px;
+        top: 205px;
     }
     .num{
         font-size: 5vw;
     }
-  
-    .logoBox2{
-        grid-template-columns: repeat(1, 1fr);
+    .skillContent{
+      flex-direction: column;
+    }  
+    .contentLeft{
+      padding: 10vw 2vw 2vw 2vw;
+      flex:auto;
+    }
+    .imgBox{
+      width: 80px;
+      height: 80px;
+    }
+    .imgBox2{
+      width: 170px;
+      height: 80px;
+    }
+    .imgBox3{
+      width: 170px;
+      height: 70px;
     }
     .logoBox3{
         grid-template-columns: repeat(2, 1fr);
-    
-    }
-    .skillContent{
-        flex-direction: column;
-    }
-    .imgBox2{
-        width: 180px;
-        height: 80px;
-    }
-    .imgBox3{
-        width: 140px;
-        height: 80px;
     }
     .logoBox4{
-        padding-bottom: 30px;
+      gap: 0;
     }
-    .contentLeft{
-        padding-left: 0;
-        align-items: end;
-        padding-bottom: 10px;
-        flex:1;
-    }
-      
-  
-    .info{
-        flex: 1;
-    }
-}
-@media (max-width:900px){
-    
-    .siteTitle {
-        height: 8.5vw;
-        font-size: 7vw;
-        text-transform: uppercase;
-        border-bottom: 1vw solid black;
-        margin-bottom: 10px;
-    }
-    .s1 {
-        top: 75px;
-    }
-
-    .s2 {
-        top: 155px;
-    }
-
-    .s3 {
-        top: 235px;
-    }
-    .num{
-        font-size: 6vw;
-    }
-   
-}
-
-/* @media (min-width: 680px) and (max-width: 900px) {
-    .s1 {
-        top: 95px;
-    }
-
-    .s2 {
-        top: 175px;
-    }
-
-    .s3 {
-        top: 255px;
-    }
-} */
-
-
-@media (max-width:700px){
-    .imgBox{
-        width: 80px;
-        height: 80px;
-    }
-    .imgBox2{
-        width: 170px;
-        height: 80px;
+    .info {
+      flex:auto;
+      justify-content: center;
+      align-items: start;
+      padding: 1vw;
     }
     .infoText{
-        font-size: 12px;
+        font-size: 15px;
     }
+
 }
-@media (max-width: 400px) {
-    
-    /* 또는 top 값 조정 */
+
+@media (max-width:600px){
+    .infoText{
+        font-size: 13px;
+    }
     .s1 { top: 75px; }
     .s2 { top: 100px; }
     .s3 { top: 125px; }
-    .s4 { top: 150px; }
-  }
+}

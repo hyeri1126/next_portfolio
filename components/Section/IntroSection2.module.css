@@ -68,13 +68,7 @@
 }
 
 .logoTitle{
-    
-    /* font-family: 'SangSangRock'; */
-    /* font-family: 'KOTRAHOPE'; */
-    /* font-family: 'EarlyFontDiary'; */
     font-family: 'EarlyFontDiary';
-
-
     position: absolute;
     font-size: 24px;
     top: 0;
@@ -96,6 +90,7 @@
     color: white;
     font-family: 'NEXON Lv2 Gothic';
     z-index: 2;
+    width: 80%;
 }
 .nav{
     font-family: 'EarlyFontDiary';
@@ -226,7 +221,6 @@
 
 @media (max-width:900px){
     .introText{
-        width: 80%;
         font-size: 12px;
     }
     .nav{
