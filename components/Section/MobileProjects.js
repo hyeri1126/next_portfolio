@@ -9,13 +9,14 @@ export default function MobileProjects(){
   const swiperCustomStyles = {
     '--swiper-pagination-color': '#64B5F6',
     '--swiper-pagination-bullet-inactive-color': 'rgba(255, 255, 255, 0.9)',
-    '--swiper-navigation-color': 'rgba(255, 255, 255, 0.7)',
-    '--swiper-navigation-size': '25px',
+    // 네비게이션 화살표 스타일 - 주황색으로 변경
+    '--swiper-navigation-color':  '#FF9800',
+    '--swiper-navigation-size': '16px', // 원형 테두리 안에 맞는 사이즈로 조정
   };
 
 
   return(
-    <section className={styles.mobileProjectsSection}>
+    <section className={`${styles.mobileProjectsSection} ${styles.container}`}>
        <h2 className={styles.sectionTitle}>프로젝트</h2>
 
        <Swiper
