@@ -90,6 +90,8 @@ export default function ContactSection({ marqueeRef }){
 
   
     const createScrollTrigger = () =>{
+      if (!marqueeRef?.current) return null;
+      
       return  ScrollTrigger.create({
           id: "contactSection",
           trigger: marqueeRef.current,

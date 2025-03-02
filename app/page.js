@@ -13,8 +13,14 @@ import ContactSection from "@/components/Section/ContactSecion";
 
 export default function Home() {
   const marqueeRef = useRef(null);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+
+    if (window.innerWidth < 600) {
+      setIsMobile(true);
+    }
+
     if ("scrollRestoration" in window.history) {
       window.history.scrollRestoration = "manual";
     }
@@ -39,8 +45,8 @@ export default function Home() {
         <ProjectIntroSection />
         <HorizontalSection />
         <PublishingSection />
-        <MarqueeTextSection  ref={marqueeRef}/>
-        <ContactSection  marqueeRef={marqueeRef} />
+        {!isMobile && <MarqueeTextSection ref={marqueeRef} />}
+        <ContactSection marqueeRef={isMobile ? null : marqueeRef} />
       </div>
   );
 }
