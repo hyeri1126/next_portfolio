@@ -14,6 +14,8 @@ import MobileProjects from "@/components/Section/MobileProjects";
 
 export default function Home() {
   const marqueeRef = useRef(null);
+  const aboutRef = useRef(null);
+  const projectRef = useRef(null);
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -42,17 +44,28 @@ export default function Home() {
     };
   }, []);
 
+  const scrollToSection = (ref) => {
+    if (ref && ref.current) {
+      ref.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
       <div>
-        <IntroSection2  />
+        <IntroSection2  
+          scrollToAbout={() => scrollToSection(aboutRef)} 
+          scrollToProjects={() => scrollToSection(projectRef)} 
+        />
         <div className="section-container">
           <MarqueeSection />
         </div>
-        <div className="section-container" style={{backgroundColor: "#f1f1f1"}}>
+        <div className="section-container" style={{backgroundColor: "#f1f1f1"}} ref={aboutRef}>
           <AboutSection />
         </div>
         <SkillSection />
-        <ProjectIntroSection />
+        <div ref={projectRef}>
+          <ProjectIntroSection />
+        </div>
         {isMobile ? <MobileProjects /> : <HorizontalSection />}
         <PublishingSection />
         {!isMobile && <MarqueeTextSection ref={marqueeRef} />}

@@ -6,7 +6,7 @@ import { CustomEase } from "gsap/dist/CustomEase";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { WaterEffect } from "../Animations/WaterEffect";
 
-export default function IntroSection2(){
+export default function IntroSection2({scrollToAbout, scrollToProjects}){
     const [isMobile, setIsMobile] = useState(false) 
     const [step, setStep] = useState(0);
    
@@ -224,7 +224,9 @@ export default function IntroSection2(){
                           transitionDelay: '0.2s'
                       }}
                     >
+                      <button onClick={scrollToAbout}>
                         ABOUT.
+                      </button>
                     </div>
                     <div 
                       style={{
@@ -234,7 +236,9 @@ export default function IntroSection2(){
                           transitionDelay: '0.5s'
                       }}
                     >
+                      <button onClick={scrollToProjects}>
                         PROJECTS.
+                      </button>
                     </div>
                 </nav>
                 
