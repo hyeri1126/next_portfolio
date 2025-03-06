@@ -178,8 +178,8 @@
   height: 30px !important;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  border: 1.5px solid   #FF9800;
-  color:  #FF9800 !important;
+  border: 1.5px solid whitesmoke;
+  color:  whitesmoke !important;
 
   display: flex !important;
   justify-content: center !important;

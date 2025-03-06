@@ -10,7 +10,7 @@ export default function MobileProjects(){
     '--swiper-pagination-color': '#64B5F6',
     '--swiper-pagination-bullet-inactive-color': 'rgba(255, 255, 255, 0.9)',
     // 네비게이션 화살표 스타일 - 주황색으로 변경
-    '--swiper-navigation-color':  '#FF9800',
+    '--swiper-navigation-color':  'white',
     '--swiper-navigation-size': '16px', // 원형 테두리 안에 맞는 사이즈로 조정
   };
 

@@ -11,7 +11,7 @@
   left: 0;
   width: 100%;
   height: calc(100% + 20px); /* 기존 높이 + 위로 올라간 만큼 */
-  background-color: #333; /* 원하는 배경색 */
+  background-color: black; /* 원하는 배경색 */
   z-index: -1; /* .sectionBox 뒤에 위치 */
 }
 .section{
